@@ -220,6 +220,7 @@ header {
 }
 
 @media screen and (max-width: 1020px) {
+    header {display: none;}
     .topnav a:not(:first-child) {
         display: none;
     }
