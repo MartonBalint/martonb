@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="navbar/nav.css">
+  <link rel="stylesheet" href="vasarnap.css">
+  <link rel="icon" href="src/arculat/vízjel/logo.png">
+  <script src="script.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <title>Vasárnap</title>
+</head>
+
+<body class="disabled" onload="vas();">
+
+  <!-- Tartalom -->
+  <div data-aos="fade-up" class="section" style="padding-top: 0px;">
+    <div class="overvideo">
+      <p class="maintext">Vasárnapi Istentisztelet</p>
+      <div class="flex" style="justify-content: left;">
+        <p class="altitle" style="text-align:left">A hét legizgalmasabb napja számunkra a vasárnap, amikor ezer felől
+          összegyűlünk, hogy
+          együtt közösen találkozzunk az élő Istennel. Az Ő jelenlétében mindig történik valami. Együtt dicsérjük Őt
+          énekek
+          segítségével, a tanításon keresztül a szívünk legmélyét szólítja meg, az alkalom utáni személyes beszélgetések
+          pedig
+          életre szóló barátságokat adnak.</p>
+      </div>
+      <div class="alsomaintext">
+        <p style="font-weight: bold; text-shadow:2px 3px 3px black; font-size:18px">Várunk
+          szeretettel vasárnap<br>10:00-kor a Kovács utca 13-ban!</p>
+        <br>
+        <a href="https://www.youtube.com/@pecelibaptista/streams" target="_blank">
+          <p class="countdown">
+            Nézz minket élőben<br><span class="days" id="days"></span><span class="smalltext"> nap,</span>
+            <span class="hours" id="hours"></span><span class="smalltext"> óra,</span>
+            <span class="minutes" id="minutes"></span><span class="smalltext"> perc,</span>
+            <span class="minutes" id="seconds"></span><span class="smalltext"> másodperc múlva</span>
+          </p>
+
+        </a>
+      </div>
+    </div>
+    <video class="mainvideo" autoplay loop playsinline muted src="src/vasarnap.mp4"></video>
+  </div>
+
+  <div class="section" id="new">
+    <a href="#new">
+      <p class="title">Segítünk ha először jönnél ide!</p>
+    </a>
+    <div class="center"><iframe width="1200" height="680" src="https://www.youtube.com/embed/WBkma52_1zg"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe></div>
+    <p class="altitle" style="max-width: 1200px; margin: 10px auto;">Tudjuk hogy mennyi feszültség jár azzal mikor
+      először megyünk el egy új, számunkra ismeretlen
+      helyre, nemtudjuk hogy mire számitsunk, és hogy mi fog ott történni. Éppen ezért készitettünk számodra egy videót,
+      arról hogy, hogyan készülhetsz föl erre, ami, és igyekeztünk összeszedni minden információt ami segítségedre
+      lehet, reméljük hogy ezzel tudjuk kicsit csökkenteni reméljük hogy tudunk ezzel a videóval segiteni, várunk
+      személyesen
+      bármelyik alkalmunkra!</p>
+  </div>
+
+  <div class="section" id="tud">
+    <a href="#tud">
+      <p class="title">Jó ha tudod</p>
+    </a>
+    <div class="flex" style="max-width: 1200px; margin: 10px auto;">
+      <div class="rule"><img src="src/png/kid.png" alt="Gyermekek">
+        <p class="altitle">Gyermekfelügyelet<br><br></p>
+        <p>Kisgyermekek számára felügyeletet biztosítunk, általános iskolás gyermekek pedig Vasárnapi
+          Iskolán
+          vehetnek részt.
+        </p>
+      </div>
+      <div class="rule"><img src="src/dress.png" alt="Dress code">
+        <p class="altitle">Dress code<br><br>
+        </p>
+        <p>A ruha miatt ne izgulj! Gyere kényelmesen, épp, ahogy a hétköznapokon a munkába/iskolába
+          szoktál
+          menni.
+        </p>
+      </div>
+      <div class="rule"><img src="src/brain.png" alt="Tanítások">
+        <p class="altitle">Közérthető Tanítások
+        </p>
+        <p>Biztos lehetsz benne, hogy a prédikáció hozzád is fog szólni. Közérthető megfogalmazással,
+          hétköznapi
+          tanácsokkal és példákkal értjük meg Isten üzeneteit.
+        </p>
+      </div>
+      <div class="rule"><img src="src/png/gro.png" alt="Közösség">
+        <p class="altitle">Itt beleillesz a közösségbe
+        </p>
+        <p>Vasárnapi alkalmainkon túl számos egyéb, korodhoz és érdeklődésedhez passzoló programok és
+          közösségek
+          várnak rád.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+  <div class="section" id="kov">
+
+    <a href="#kov">
+      <p class="title">Nézz bele korábbi sorozatainkba!</p>
+    </a>
+    <div class="center" style="max-width: 1800px; margin: 0px auto;">
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/videoseries?list=PLtXazojwx0hbxO-wZGHBrXAuYpfK0Uzo7"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/videoseries?list=PLtXazojwx0hYSvG7FGmsquiba1IefVCXL"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/videoseries?list=PLtXazojwx0hY3nweOu9PKlgQRl8QoxO8b"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/videoseries?list=PLtXazojwx0hb_KZG6M3KXD2d0hJDJzHnb"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/videoseries?list=PLtXazojwx0hYzrEMooO2qxDTst7sis-Ek"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/videoseries?list=PLtXazojwx0hZoAID9Fa7LlR8azTMz7yUT"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+    <div class="center"><a href="https://www.youtube.com/@pecelibaptista" target="_blank"><button>
+          <p class="altitle">További tanítások...</p>
+        </button></a></div>
+  </div>
+  <!-- Tartalom -->
+
+  <!-- Footer -->
+  <div style="background-color:rgba(0, 0, 0, 0.3)">
+    <div data-aos="fade-up" id="ittis">
+      <a href="#ittis">
+        <p class="title">Megtalálhatsz minket itt is!</p>
+      </a>
+      <div class="flex">
+        <div class="bigbox"><a target="_blank" href="https://open.spotify.com/show/4CbSNbMBZmcwia1KIaqFUE">
+            <div class="flex"><i class="bigi fab fa-spotify"></i></div>
+            <p class="altitle">Spotyfi Podcast</p>
+        </div></a>
+        <div class="bigbox"><a target="_blank" href="https://www.youtube.com/@pecelibaptista">
+            <div class="flex"><i class="bigi fab fa-youtube"></i></div>
+            <p class="altitle">YouTube Csatornánk</p>
+        </div></a>
+        <div class="bigbox"><a target="_blank"
+            href="https://podcasts.apple.com/us/podcast/p%C3%A9celi-baptista-gy%C3%BClekezet/id1644896982">
+            <div class="flex"><i class="bigi fab fa-apple"></i></div>
+            <p class="altitle">Apple Podcast</p>
+        </div></a>
+        <div class="bigbox"><a target="_blank"
+            href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy82ZjhiNzczOC9wb2RjYXN0L3Jzcw">
+            <div class="flex"><i class="bigi fab fa-google"></i></div>
+            <p class="altitle">Google Podcast</p>
+        </div></a>
+        <div class="bigbox"><a target="_blank" href="https://www.tiktok.com/@pecelibaptistagyulekezet">
+            <div class="flex"><i class="bigi fab fa-tiktok"></i></div>
+            <p class="altitle">TikTok Oldalunk</p>
+        </div></a>
+        <div class="bigbox"><a target="_blank" href="https://music.amazon.com/">
+            <div class="flex"><i class="bigi fab fa-amazon"></i></div>
+            <p class="altitle">Amazon Podcast</p>
+        </div></a>
+      </div>
+    </div>
+    <hr class="foohr">
+    <div
+      style="display:flex; justify-content:center; padding: top 10px; background-color:transparent; padding-top: 0px;"
+      class="section">
+      <div class="linkekparent">
+        <a href="kapcsolat.html">
+          <p class="altitle" style="margin: 10px 0px;cursor: pointer;">Csatlakozási lehetőségek</p>
+        </a>
+        <a href="https://www.youtube.com/@pecelibaptista/streams" target="_blank">
+          <p class="footerpoint">Élőben</p>
+        </a><a href="https://www.youtube.com/@pecelibaptista/featured" target="_blank">
+          <p class="footerpoint">Online</p>
+        </a><a href=" index.html#ub">
+          <p class="footerpoint">Uzonyi Barnabás</p>
+        </a><a href=" index.html#kapcsolat">
+          <p class="footerpoint">Kapcsolat</p>
+        </a>
+      </div>
+      <div class="linkekparent">
+        <a href="kapcsolat.html#csempe">
+          <p class="altitle" style="margin: 10px 0px; cursor: pointer;">Videós tartalmak
+          </p>
+        </a>
+        <a href="milyen-az-isten.html">
+          <p class="footerpoint">Milyen az Isten?</p>
+        </a>
+        </a><a href="nem-vagyok-jol.html">
+          <p class="footerpoint">Nem vagyok jól</p>
+        </a>
+        </a><a href="parkapcsolat.html">
+          <p class="footerpoint">Párkapcsolat</p>
+        </a>
+      </div>
+      <div class="linkekparent">
+        <a href="alkalmak.html">
+          <p class="altitle" style="margin: 10px 0px; cursor: pointer;">Alkalmaink</p>
+        </a><a href="bibliaora.html">
+          <p class="footerpoint">Csütörtöki bibliatanulmányozás</p>
+        </a><a href="bazispont.html">
+          <p class="footerpoint">Ifjúsági alkalmak</p>
+        </a><a href="vasarnap.html">
+          <p class="footerpoint">Vasárnapi gyülekezet</p>
+        </a><a href="kiscsop.html">
+          <p class="footerpoint">Kiscsoportok</p>
+        </a>
+      </div>
+    </div>
+    <div class="flex">
+      <p style="text-align:center;margin:20px 10px 10px 10px">© 2023 Péceli Baptista Gyülekezet</p>
+      <a href="adatkezeles.html">
+        <p class="adat">
+          Adatkezelés</p>
+      </a>
+    </div>
+  </div>
+  <nav class="navbar hide" id="navbarrr">
+    <div class="content">
+      <div class="logo">
+        <a href=" index.html"><img class="navlogo" src="src/arculat/vízjel/logo vízjel obs.png" alt="Gyülekezet"></a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="alkalmak.html">Alkalmaink</a></li>
+        <li><a href="rolunk.html">Kik vagyunk?</a></li>
+        <li><a href="kapcsolat.html">Kapcsolódj</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="loader"><img src="src/arculat/vízjel/logo.png" alt="Logó" style="width: 160px;"></div>
+
+</body>
+
+</html>
+<script>
+  AOS.init({
+    duration: 700,
+    offset: 150
+  });
+  const body = document.querySelector("body");
+  const navbar = document.querySelector(".navbar");
+  const menuBtn = document.querySelector(".menu-btn");
+  const cancelBtn = document.querySelector(".cancel-btn");
+  menuBtn.onclick = () => {
+    navbar.classList.add("show");
+    menuBtn.classList.add("hide");
+    body.classList.add("disabled");
+  }
+  cancelBtn.onclick = () => {
+    body.classList.remove("disabled");
+    navbar.classList.remove("show");
+  }
+  window.onscroll = () => {
+    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+  }
+</script>

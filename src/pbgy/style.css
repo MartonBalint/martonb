@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 1s;
+  flex-wrap: wrap;
+  font-family: Standard;
+  scroll-behavior: smooth;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+ 
+.bigi {
+  font-size: 54px;
+  margin: 0px auto;
+  color: rgb(181, 140, 64);
+  opacity: .6;
+}
+
+.bigi:hover {
+  color: rgb(181, 140, 64);
+  opacity: 1;
+}
+
+.foohr {
+  height: 2px;
+  opacity: .8;
+  width: 80%;
+  margin: 5px auto;
+}
+
+.footerpoint {
+  margin: 5px;
+  text-align: left;
+  cursor: pointer;
+  transition: .5s;
+}
+.footerpoint:hover{
+  color: rgb(181, 140, 64);
+  transition: .5s;
+}
+@font-face {
+  font-family: title;
+  src: url("src/arculat/betu/Amarillo.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Standard;
+  src: url("src/arculat/betu/SpartanMB-Regular.otf") format("truetype");
+}
+
+body {
+  background-color: rgb(34, 54, 63);
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.listakeret {
+  max-width: 100%;
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: 1s;
+}
+
+/*Loading SCR*/
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(34, 54, 63);
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border: 5px solid rgb(34, 54, 63);
+  border-top-color: rgb(181, 140, 64);
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+::placeholder {
+  font-size: 20px;
+}
+
+button .altitle {
+  font-size: 24px;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+
+}
+
+.test {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}
+
+@media (max-width:600px) {
+
+  iframe {
+    width: 100%;
+  }
+}
+
+a {
+  text-decoration: none;
+  font-family: Standard;
+  cursor: unset;
+}
+
+i {
+  font-size: 26px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+i:hover {
+  opacity: .5;
+}
+
+ul {
+  color: white;
+}
+
+p {
+  color: white;
+  font-family: Standard;
+  font-size: 18px;
+}
+
+.title {
+  font-size: 48px;
+  text-align: center;
+  color: rgb(181, 140, 64);
+  font-family: title;
+  margin: 40px auto;
+  cursor: pointer;
+  height: 120px;
+  text-shadow: black 3px 3px 2px;
+
+}
+
+.altitle {
+  font-size: 26px;
+  margin: 10px;
+  text-align: center;
+  color: rgb(181, 140, 64);
+  text-shadow: 2px 2px 2px black;
+}
+
+.navlogo {
+  width: 150px;
+  scale: 1.7;
+}
+
+.navlogo:hover {
+  scale: 1.8;
+}
+
+
+b {
+  text-shadow: black 2px 2px 2px;
+  font-weight: bold;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 18px;
+  }
+
+  .footerpoint {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 24px;
+    margin: 20px;
+    color: rgb(181, 140, 64);
+  }
+
+  .altitle {
+    font-size: 20px;
+    color: rgb(181, 140, 64);
+  }
+
+  .title .altitle {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+iframe {
+  margin: 10px;
+  border-radius: 16px;
+  border: rgb(181, 140, 64) solid 2px;
+  max-width: 100%;
+}
+
+
+.section {
+  background-color: rgb(34, 54, 63);
+  flex-wrap: wrap;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 75px 10px 10px 10px;
+}
+
+hr {
+  border: none;
+  opacity: .3;
+  height: 1px;
+  background-color: rgb(181, 140, 64);
+}
+
+img {
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.hide {
+  visibility: hidden;
+  display: none;
+}
+
+::selection {
+  background: rgb(0, 123, 255, 0.3);
+}
+
+.content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.icon {
+  color: rgb(181, 140, 64);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+/*Footer*/
+.linkekparent {
+  margin: 0px auto;
+  max-width: 50%;
+}
+
+button {
+  background: none;
+  scale: .8;
+  cursor: pointer;
+  outline: none;
+  padding: 3px;
+  color: wheat;
+  border-radius: 12px;
+  margin: 12px auto;
+  border: 2px solid rgb(181, 140, 64);
+}
+
+.center {
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+button:hover {
+  background-color: rgba(181, 140, 64, .1);
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.bigbox i {
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.bigbox {
+  width: 200px;
+}
+
+.bigi {
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.adat{
+  text-align:center;cursor:pointer;margin:20px 10px 10px 10px; text-decoration:underline
+}
+
+.adat:hover{
+  color: rgb(181, 140, 64);
+}
+
+svg {fill: rgb(181, 140, 64);}
+/*Főoldal*/
+
+
+.countdown {
+  font-weight: bold;
+  text-shadow: 2px 3px 3px black;
+  text-decoration: underline;
+  font: size 18px;
+  cursor: pointer;
+}
+
+.alsomaintext{
+  margin-top: 230px; margin-bottom:500px
+}
+.hatter {
+  width: 96%;
+  height: auto;
+  margin: 120px auto 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+
+.overvideo {
+  width: 60%;
+  height: 100vh;
+  padding: 110px 0px 11px 14%;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+.mainvideo {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
+.maintext {
+  font-size: 54px;
+  font-weight: bold;
+  text-shadow: 2px 2px 1px black;
+  min-width: 200px;
+  margin: 5px;
+}
+.mainbutton {
+  background-color: rgb(34, 54, 63);
+  border-radius: 16px;
+  margin: 40px;
+  cursor: pointer;
+  padding: 12px;
+  scale: 1.3;
+  border: 2px transparent solid;
+}
+
+.mainbutton2 {
+  border-radius: 16px;
+  margin: 40px;
+  cursor: pointer;
+  scale: 1.3;
+  padding: 12px;
+}
+
+.mainbutton2 p {
+  cursor: pointer;
+  margin: 10px 10px 70px 0px;
+}
+
+.mainbutton:hover {
+  background-color: rgba(34, 54, 63, .8);
+  border: 2px rgb(181, 140, 64) solid;
+  border-radius: 24px;
+}

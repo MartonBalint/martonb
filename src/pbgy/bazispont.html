@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="navbar/nav.css">
+  <link rel="stylesheet" href="bazispont.css">
+  <link rel="icon" href="src/arculat/vízjel/logo.png">
+  <script src="script.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <title>Ifjúsági alkalmaink</title>
+</head>
+
+<body class="disabled" onload="ifi();">
+
+  <!-- Tartalom -->
+  <div data-aos="fade-up" class="section" style="padding-top: 0px;">
+    <div class="overvideo">
+      <p class="maintext">Ifjúsági alkalmaink</p>
+      <p class="altitle" style="text-align: left;">Egy hely, ahol jól érezheted magad,<br>otthonra lelhetsz és
+        megismerheted
+        Istent.<br>Minden
+        pénteken 18:30-tól ameddig csak jólesik!</p>
+      <div class="flex" style="justify-content: left;">
+
+      </div>
+      <div class="alsomaintext">
+        <p style="font-weight: bold; text-shadow:2px 3px 3px black; font-size:18px">Várunk
+          szeretettel pénteken<br>18:30-kor a Kovács utca 13-ban!</p>
+        <br>
+        <a href="" target="_blank">
+          <p class="countdown">
+            A legközelebbi alkalom<br><span class="days" id="days"></span><span class="smalltext"> nap,</span>
+            <span class="hours" id="hours"></span><span class="smalltext"> óra,</span>
+            <span class="minutes" id="minutes"></span><span class="smalltext"> perc,</span>
+            <span class="minutes" id="seconds"></span><span class="smalltext"> másodperc múlva</span>
+          </p>
+
+        </a>
+      </div>
+    </div>
+    <video class="mainvideo" autoplay loop playsinline muted src="src/ifi.mp4"></video>
+  </div>
+  <div data-aos="zoom-in" class="section" id="ifi">
+    <p class="title">Mire számithatsz?</p>
+
+
+
+
+    <div class="section" style="max-width: 1200px; margin: 0px auto;text-align: center;">
+      <!-- Video -->
+
+    </div>
+    <div style="display: flex; justify-content:center;align-items:center">
+      <img class="telefon" src="src/png/insta.png" alt="Instagram">
+
+      <div>
+        <div data-aos="fade-up-right" class="gyerekbox">
+          <img class="ificsoportkep" src="src/csoportkep.jpg" alt="Csoportkép">
+          <div class="flex"><img class="ifikep" src="src/ifi/20.jpg" alt=""><img class="ifikep" src="src/ifi/5.jpg" alt=""><img class="ifikep" src="src/ifi/30.jpg" alt=""></div>
+        </div>
+      </div>
+      <div data-aos="fade-up-left" class="ifidesc">
+          <p class="altitle" style="text-align: left;">Minden pénteken 18:30-tól a fiataloké a terep. Az ifjúsági alkalmak négy részből állnak
+            általában. Először közösségépítő játékok vannak. Itt könnyedén beilleszkedhet a közösségben az is,
+            aki
+            először jár nálunk. Alkalmunk Isten zenés dicsőítésével folytatódik. Szövegükben egyszerű üzeneteket
+            hordozó, zeneileg a fiatalok ízléséhez közelálló zenékkel dicsérjük Istent. Ezt követően bibliai
+            tanítást hallhatunk 15-20 percben. Minden esetben fiatalokhoz szóló, könnyen alkalmazható tanítások
+            ezek. Az alkalom kötetlen közösségi élettel zárul, amelynek része a számtalan társasjáték, csocsó,
+            léghoki, popcorn, és még sok más.</p>
+      </div>
+
+      <!-- <div data-aos="fade-up-left" class="ifispotify">
+        <p class="title">Zene listáink</p>
+        <p class="altitle">Otthon is hallgathatod<br>a folyamatosan bővülő <a
+            href="https://open.spotify.com/user/w6lfyok7c9ysvmlj5l7kbh66z"
+            style="color: rgb(181, 140, 64);border-bottom:2px solid rgb(181, 140, 64)"> Spotify
+            listánkat</a>!</p>
+        <div>
+          <ul>
+            <a target="_blank"
+              href="https://open.spotify.com/playlist/1HgATqxIVpht7NbG3TScb4?si=66fb722f82754f3c&nd=1">
+              <li style="display: flex; align-items:center">
+                <p style="margin:0px auto;">Gyors/dicsőtő dalok -
+                  Ifjúsági alkalmaink előtti gyülekezés</p>
+              </li>
+            </a>
+            <hr class="ifihr">
+
+            <a target="_blank"
+              href="https://open.spotify.com/playlist/2mkjlkms7iSCvGzjLqhUkL?si=17fd1ea5648049e2&nd=1">
+              <li style="display: flex; align-items:center;">
+                <p style="margin:0px auto;">Vegyes dalok - Mi az Ifi
+                  vége után hallgatjuk</p>
+              </li>
+            </a>
+            <hr class="ifihr">
+
+            <a target="_blank"
+              href="https://open.spotify.com/playlist/05jkr39GrUIer3VK9mfv1v?si=0dd6a526a6c14277&nd=1">
+              <li style="display: flex; align-items:center">
+                <p style="margin:0px auto;">Gyors számok - Játékok
+                  alatt, amikor felprögünk</p>
+              </li>
+            </a>
+            <hr class="ifihr">
+
+            <a target="_blank"
+              href="https://open.spotify.com/playlist/055Xfp5fUgqU2IlkQEAWKJ?si=6ce79b6581ac48b8&nd=1">
+              <li style="display: flex; align-items:center">
+                <p style="margin:0px auto;">Lassú/imádó dicsőítő
+                  dalok</p>
+              </li>
+            </a>
+            <hr class="ifihr">
+
+            <a target="_blank"
+              href="https://open.spotify.com/playlist/5KSJk1iK57CCU6PZHPBvaj?si=7e0a2cb9535543a7&nd=1">
+              <li style="display: flex; align-items:center">
+                <p style="margin:0px auto;">Rock válogatás</p>
+        </div></a>
+        <hr class="ifihr">
+
+        <a target="_blli"
+          href="https://open.spotify.com/playlist/2jtE9hwYiEMYgcLGk9GvwF?si=7c289ad9ad404a49&nd=1">
+          <li style="display: flex; align-items:center">
+            <p style="margin:0px auto;">Electro/techno
+              világát kedvelőinek</p>
+          </li>
+        </a>
+        <p class="altitle">Fiatalok között fiatalosan!</p>
+        </ul>
+        <div style="display: flex; justify-content:center">
+          <div class="flex"> <a href="https://www.facebook.com/pecelibaptistaifi" target="_blank"><i
+                class="fab fa-facebook-square" style="color: blue;"></i></i></a>
+          </div>
+          <div class="flex"> <a href="https://open.spotify.com/user/w6lfyok7c9ysvmlj5l7kbh66z"
+              target="_blank"><i class="fab fa-spotify" style="color: green;"></i></a></div>
+          <div class="flex"> <a href="https://www.instagram.com/bazis_pont/" target="_blank"><i
+                class="fab fa-instagram" style="color: palevioletred;"></i></a>
+          </div>
+          <div class="flex"> <a href="https://discord.gg/bDJVjNJrtd" target="_blank"><i
+                class="fab fa-discord" style="color:mediumslateblue;"></i></a></div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+
+  <!-- Tartalom -->
+
+  <!-- Footer -->
+  <div style="background-color:rgba(0, 0, 0, 0.3)">
+    <div data-aos="fade-up" id="ittis">
+      <a href="#ittis">
+        <p class="title">Megtalálhatsz minket itt is!</p>
+      </a>
+      <div class="flex">
+        <div class="bigbox"><a target="_blank" href="https://open.spotify.com/show/4CbSNbMBZmcwia1KIaqFUE">
+            <div class="flex"><i class="bigi fab fa-spotify"></i></div>
+            <p class="altitle">Spotyfi Podcast</p>
+        </div></a>
+        <div class="bigbox"><a target="_blank" href="https://www.youtube.com/@pecelibaptista">
+            <div class="flex"><i class="bigi fab fa-youtube"></i></div>
+            <p class="altitle">YouTube Csatornánk</p>
+        </div></a>
+        <div class="bigbox"><a target="_blank"
+            href="https://podcasts.apple.com/us/podcast/p%C3%A9celi-baptista-gy%C3%BClekezet/id1644896982">
+            <div class="flex"><i class="bigi fab fa-apple"></i></div>
+            <p class="altitle">Apple Podcast</p>
+        </div></a>
+        <div class="bigbox"><a target="_blank"
+            href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy82ZjhiNzczOC9wb2RjYXN0L3Jzcw">
+            <div class="flex"><i class="bigi fab fa-google"></i></div>
+            <p class="altitle">Google Podcast</p>
+        </div></a>
+        <div class="bigbox"><a target="_blank" href="https://www.tiktok.com/@pecelibaptistagyulekezet">
+            <div class="flex"><i class="bigi fab fa-tiktok"></i></div>
+            <p class="altitle">TikTok Oldalunk</p>
+        </div></a>
+        <div class="bigbox"><a target="_blank" href="https://music.amazon.com/">
+            <div class="flex"><i class="bigi fab fa-amazon"></i></div>
+            <p class="altitle">Amazon Podcast</p>
+        </div></a>
+      </div>
+    </div>
+    <hr class="foohr">
+    <div
+      style="display:flex; justify-content:center; padding: top 10px; background-color:transparent; padding-top: 0px;"
+      class="section">
+      <div class="linkekparent">
+        <a href="kapcsolat.html">
+          <p class="altitle" style="margin: 10px 0px;cursor: pointer;">Csatlakozási lehetőségek</p>
+        </a>
+        <a href="https://www.youtube.com/@pecelibaptista/streams" target="_blank">
+          <p class="footerpoint">Élőben</p>
+        </a><a href="https://www.youtube.com/@pecelibaptista/featured" target="_blank">
+          <p class="footerpoint">Online</p>
+        </a><a href=" index.html#ub">
+          <p class="footerpoint">Uzonyi Barnabás</p>
+        </a><a href=" index.html#kapcsolat">
+          <p class="footerpoint">Kapcsolat</p>
+        </a>
+      </div>
+      <div class="linkekparent">
+        <a href="kapcsolat.html#csempe">
+          <p class="altitle" style="margin: 10px 0px; cursor: pointer;">Videós tartalmak
+          </p>
+        </a>
+        <a href="milyen-az-isten.html">
+          <p class="footerpoint">Milyen az Isten?</p>
+        </a>
+        </a><a href="nem-vagyok-jol.html">
+          <p class="footerpoint">Nem vagyok jól</p>
+        </a>
+        </a><a href="parkapcsolat.html">
+          <p class="footerpoint">Párkapcsolat</p>
+        </a>
+      </div>
+      <div class="linkekparent">
+        <a href="alkalmak.html">
+          <p class="altitle" style="margin: 10px 0px; cursor: pointer;">Alkalmaink</p>
+        </a><a href="bibliaora.html">
+          <p class="footerpoint">Csütörtöki bibliatanulmányozás</p>
+        </a><a href="bazispont.html">
+          <p class="footerpoint">Ifjúsági alkalmak</p>
+        </a><a href="vasarnap.html">
+          <p class="footerpoint">Vasárnapi gyülekezet</p>
+        </a><a href="kiscsop.html">
+          <p class="footerpoint">Kiscsoportok</p>
+        </a>
+      </div>
+    </div>
+    <div class="flex">
+      <p style="text-align:center;margin:20px 10px 10px 10px">© 2023 Péceli Baptista Gyülekezet</p>
+      <a href="adatkezeles.html">
+        <p class="adat">
+          Adatkezelés</p>
+      </a>
+    </div>
+  </div>
+  <nav class="navbar hide" id="navbarrr">
+    <div class="content">
+      <div class="logo">
+        <a href=" index.html"><img class="navlogo" src="src/arculat/vízjel/logo vízjel obs.png" alt="Gyülekezet"></a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="alkalmak.html">Alkalmaink</a></li>
+        <li><a href="rolunk.html">Kik vagyunk?</a></li>
+        <li><a href="kapcsolat.html">Kapcsolódj</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="loader"><img src="src/arculat/vízjel/logo.png" alt="Logó" style="width: 160px;"></div>
+
+</body>
+
+</html>
+<script>
+  AOS.init({
+    duration: 700,
+    offset: 150
+  });
+  const body = document.querySelector("body");
+  const navbar = document.querySelector(".navbar");
+  const menuBtn = document.querySelector(".menu-btn");
+  const cancelBtn = document.querySelector(".cancel-btn");
+  menuBtn.onclick = () => {
+    navbar.classList.add("show");
+    menuBtn.classList.add("hide");
+    body.classList.add("disabled");
+  }
+  cancelBtn.onclick = () => {
+    body.classList.remove("disabled");
+    navbar.classList.remove("show");
+  }
+  window.onscroll = () => {
+    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+  }
+</script>

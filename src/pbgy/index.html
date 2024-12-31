@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="navbar/nav.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="src/arculat/vízjel/logo.png">
+  <script src="script.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <title>Péceli Baptista Gyülekezet</title>
+</head>
+
+<body class="disabled" onload="fooldal();">
+
+  <!-- Tartalom -->
+
+  <!-- [disabled] -->
+  <!-- Főoldal [section title flex fooldal_box jelentkezesbox altitle] -->
+  <div data-aos="fade-up" class="section" style="padding-top: 0px;">
+    <div class="overvideo">
+      <p class="maintext">KÜLDETÉS. SZERETET. ERŐ.</p>
+      <div class="flex" style="justify-content: left;">
+        <a href="#new">
+          <div class="mainbutton">
+            <p style="color: rgb(181, 140, 64);">Új vagyok</p>
+          </div>
+        </a>
+        <a href="#kapcsolat">
+          <div class="mainbutton2" style="cursor: pointer;">
+            <p style="cursor: pointer;">Kapcsolat</p>
+          </div>
+        </a>
+      </div>
+      <div class="alsomaintext">
+        <p style="font-weight: bold; text-shadow:2px 3px 3px black; font-size:18px">Várunk
+          szeretettel vasárnap<br>10:00-kor a Kovács utca 13-ban!</p>
+        <br>
+        <a href="https://www.youtube.com/@pecelibaptista/streams" target="_blank">
+          <p class="countdown">
+            Nézz minket élőben<br><span class="days" id="days"></span><span class="smalltext"> nap,</span>
+            <span class="hours" id="hours"></span><span class="smalltext"> óra,</span>
+            <span class="minutes" id="minutes"></span><span class="smalltext"> perc,</span>
+            <span class="minutes" id="seconds"></span><span class="smalltext"> másodperc múlva</span>
+          </p>
+
+        </a>
+      </div>
+    </div>
+    <video class="mainvideo" autoplay loop playsinline muted src="src/video.mp4"></video>
+  </div>
+
+  <!-- Csempék [section title ogomb oldalgomb] -->
+  <div class="section" id="csempe">
+    <a href="#csempe">
+      <p class="title">Online videós tartalmak</p>
+    </a>
+    <div style="display: flex; flex-wrap:wrap;max-width:1260px; margin:0px auto">
+      <div class="csempekeret">
+        <a href="parkapcsolat.html">
+          <div class="csempe" onmouseenter="csempeactive()" onmouseleave="csempeoff()"
+            style="background-image: url(src/parkapcsolat.jpg); ">
+            <p class="cimsor" id="csempetitle">Párkapcsolat</p>
+          </div>
+        </a></div>
+      <div class="csempekeret">
+        <a href="kapcsolat.html#talalkozas">
+          <div class="csempe" onmouseenter="csempeactive2()" onmouseleave="csempeoff2()"
+            style="background-image: url(src/talalkozas.jpg); ">
+            <p class="cimsor" id="csempetitle2">személyes bizonyságok</p>
+          </div>
+        </a></div>
+      <div class="csempekeret">
+        <a href="milyen-az-isten.html">
+          <div class="csempe" onmouseenter="csempeactive3()" onmouseleave="csempeoff3()"
+            style="background-image: url(src/milyen-az-isten.jpg); ">
+            <p class="cimsor" id="csempetitle3">Milyen az Isten?</p>
+          </div>
+        </a></div>
+      <div class="csempekeret">
+        <a href="nem-vagyok-jol.html">
+          <div class="csempe" onmouseenter="csempeactive4()" onmouseleave="csempeoff4()"
+            style="background-image: url(src/nem-vagyok-jol.jpg); ">
+            <p class="cimsor" id="csempetitle4">Nem vagyok jól</p>
+          </div>
+        </a></div>
+      <div class="csempekeret">
+        <a href="bibliaora.html">
+          <div class="csempe" onmouseenter="csempeactive5()" onmouseleave="csempeoff5()"
+            style="background-image: url(src/borito.jpg); ">
+            <p class="cimsor" id="csempetitle5">Bibliaóra</p>
+          </div>
+        </a></div>
+      <div class="csempekeret">
+        <a href="tanitvanysag.html">
+          <div class="csempe" onmouseenter="csempeactive6()" onmouseleave="csempeoff6()"
+            style="background-image: url(src/tanitvany.jpg); ">
+            <p class="cimsor" id="csempetitle6">Tanítványság</p>
+          </div>
+        </a></div>
+      <div class="csempekeret">
+        <a href="hello-gyerekek.html">
+          <div class="csempe" onmouseenter="csempeactive7()" onmouseleave="csempeoff7()"
+            style="background-image: url(src/hello-gyerekek.jpg); ">
+            <p class="cimsor" id="csempetitle7">Helló gyerekek!</p>
+          </div>
+        </a></div>
+      <div class="csempekeret">
+        <a href="penzugyek.html">
+          <div class="csempe" onmouseenter="csempeactive8()" onmouseleave="csempeoff8()"
+            style="background-image: url(src/penzugyek.jpg); ">
+            <p class="cimsor" id="csempetitle8">Pénzügyek</p>
+          </div>
+        </a></div>
+      <div class="csempekeret">
+        <a href="egyrol-a-kettore.html">
+          <div class="csempe" onmouseenter="csempeactive9()" onmouseleave="csempeoff9()"
+            style="background-image: url(src/egyrol-a-kettore.jpg); ">
+            <p class="cimsor" id="csempetitle9">Egyről a kettőre</p>
+          </div>
+        </a></div>
+      <div class="csempekeret">
+        <a href="csalad.html">
+          <div class="csempe" onmouseenter="csempeactive10()" onmouseleave="csempeoff10()"
+            style="background-image: url(src/csalad.jpg); ">
+            <p class="cimsor" id="csempetitle10">Család</p>
+          </div>
+        </a></div>
+      <div class="csempekeret">
+        <a href="tanitasok.html">
+          <div class="csempe" onmouseenter="csempeactive11()" onmouseleave="csempeoff11()"
+            style="background-image: url(src/vasarnap/27.jpg); ">
+            <p class="cimsor" id="csempetitle11">Tanítások</p>
+          </div>
+        </a></div>
+      <div class="csempekeret">
+        <a href="ismerd-meg-a-bibliad.html">
+          <div class="csempe" onmouseenter="csempeactive12()" onmouseleave="csempeoff12()"
+            style="background-image: url(src/ismerd-meg-a-bibliad.jpg); ">
+            <p class="cimsor" id="csempetitle12">Ismerd meg a Bibliád</p>
+          </div>
+        </a></div>
+      <div class="csempekeret">
+        <a href="mit-hiszunk.html">
+          <div class="csempe" onmouseenter="csempeactive13()" onmouseleave="csempeoff13()"
+            style="background-image: url(src/milyen-az-isten.jpg); ">
+            <p class="cimsor" id="csempetitle13">Mit hiszünk</p>
+          </div>
+        </a></div>
+    </div>
+  </div>
+
+  <!-- Alkalmaink -->
+  <div class="section" id="alk">
+    <a class="transition" href="#alk">
+      <p class="title">Alkalmaink</p>
+    </a>
+    <div class="flex">
+      <a href="vasarnap.html">
+        <div class="alkvas">
+          <p class="alkvastitle">Vasárnap</p>
+          <p class="alkvasdesc">Együtt dicsérjük Istent, miközben megszólít minket</p>
+        </div>
+      </a>
+      <div>
+        <div class="flex">
+          <a href="bibliaora.html">
+            <div class="alkcsut">
+              <p class="alkcsuttitle">Bibliaóra</p>
+              <p class="alkcsutdesc">Olvasd velünk a Bibliát</p>
+            </div>
+          </a>
+          <a href="bazispont.html">
+            <div class="alkifi">
+              <p class="alkifititle">Ifjúsági alkalmaink</p>
+              <p class="alkifidesc">Fiatalokkal fiatalosan</p>
+            </div>
+          </a>
+        </div>
+        <a href="kiscsop.html">
+          <div class="alkcsop">
+            <p class="alkcsoptitle">Kiscsoportok</p>
+            <p class="alkcsopdesc">Együtt dicsérjük Istent, miközben megszólít minket</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Uzonyi Barnabás -->
+  <div class="section" id="ub">
+    <a href="#ub">
+      <p class="title">Uzonyi Barnabás</p>
+    </a>
+    <p class="altitle">A PÉCELI BAPTISTA GYÜLEKEZET LELKIPÁSZTORA</p>
+    <div class="ubparent">
+      <div>
+        <img class="ubkep" src="src/ubarnus.jpg" alt="Uzonyi Barnabás">
+      </div>
+      <div class="ubdesc">
+        <p>"Keresztény családban nőhettem fel, de majd csak 13 éves koromban találkoztam személyesen Isten
+          hatalmas
+          szeretetével és kegyelmével. Egy új életet kaptam tőle és egy elhívást, hogy teljes időben Őt
+          szolgáljam. Legjobb barátom és segítőtársam ebben Magdi, a feleségem, akivel együtt három csodálatos
+          gyermeket nevelhetünk. Igazán nagy kiváltság számomra, hogy 2015 óta a Péceli Baptista Gyülekezet
+          lelkipásztora lehetek. Álmunk egy olyan gyülekezet, ahova belépve Istennel találkozhatsz, ahol
+          megérezheted az Ő szeretetét az embereken keresztül is és Isten tiszta beszéde hangzik el mai
+          érthető
+          nyelven. Nagyon szeretem, amikor tudok segíteni másoknak, hogy közelebb kerülhessenek Istenhez,
+          megerősödhessen a házasságuk vagy épp megtalálják a szolgálatukat."</p>
+        <p class="cont">Telefon: 06 20 773 9063<br>
+          Email: uzonyi.barnabas@gmail.com</p>
+      </div>
+    </div>
+  </div>
+  <!-- Új vagyok -->
+  <div class="section" id="new">
+    <a href="#new">
+      <p class="title">Isten hozott!</p>
+    </a>
+    <div class="center"><iframe width="1200" height="680" src="https://www.youtube.com/embed/WBkma52_1zg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    <p class="altitle" style="max-width: 1200px; margin: 10px auto;">Tudjuk hogy mennyi feszültség jár azzal mikor először megyünk el egy új, számunkra ismeretlen
+      helyre, nemtudjuk hogy mire számitsunk, és hogy mi fog ott történni. Éppen ezért készitettünk számodra egy videót,
+      arról hogy, hogyan készülhetsz föl erre, ami, és igyekeztünk összeszedni minden információt ami segítségedre
+      lehet, reméljük hogy ezzel tudjuk kicsit csökkenteni reméljük hogy tudunk ezzel a videóval segiteni, várunk személyesen
+      bármelyik alkalmunkra!</p>
+  </div>
+  <!-- Kapcsolat -->
+  <div data-aos="fade-up" class="section kapcsolat" id="kapcsolat">
+    <a href="#kapcsolat">
+      <p class="title">Kapcsolat</p>
+    </a>
+    <div style="display:flex ; justify-content:center">
+      <div data-aos="fade-up-right">
+        <iframe class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.0162202856977!2d19.338557015626417!3d47.48959737917705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741c73fe485d533%3A0x2d0007fe636b262a!2sP%C3%A9celi%20Baptista%20Imah%C3%A1z!5e0!3m2!1sen!2shu!4v1686301828100!5m2!1sen!2shu"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div data-aos="fade-up-left">
+          <div class="conkeret"><i class="far fa-envelope-open" style="color:rgb(181, 140, 64);"></i>
+            <p class="con">info[At]pecelibaptista.hu</p>
+          </div>
+          <div class="conkeret"><a class="flex" href="https://www.youtube.com/@pecelibaptista" target="_blank"><i
+                class="fab fa-youtube" style="color: red;"></i>
+              <p class="con">youtube.com/pecelibaptista</p>
+            </a>
+          </div>
+          <div class="conkeret"><a class="flex" href="https://www.facebook.com/pecelibaptista" target="_blank"><i
+                class="fab fa-facebook-square" style="color: blue;"></i>
+              <p class="con">facebook.com/pecelibaptista</p>
+            </a>
+          </div>
+          <div class="conkeret"><a class="flex" href="https://www.instagram.com/pecelibaptista/" target="_blank"><i
+                class="fab fa-instagram" style="color: palevioletred;"></i>
+              <p class="con">instagram.com/pecelibaptista</p>
+            </a>
+          </div>
+          <div class="conkeret"><a class="flex" href="https://www.tiktok.com/@pecelibaptistagyulekezet?lang=en"
+              target="_blank"><i class="fab fa-tiktok" style="color: purple;"></i>
+              <p class="con">tiktok.com/@pecelibaptista</p>
+            </a>
+          </div>
+          <div class="conkeret"><i class="far fa-credit-card" style="color:rgb(181, 140, 64);"></i>
+            <p class="con">11742331-20003854-00000000</p>
+          </div>
+          <hr class="kapcsolathr">
+          <div class="conkeret"> <a class="flex" href="https://www.facebook.com/pecelibaptistaifi" target="_blank"><i
+                class="fab fa-facebook-square" style="color: blue;"></i>
+              <p class="con">facebook.com/pecelibaptistaifi</p>
+            </a>
+          </div>
+          <div class="conkeret"><a class="flex" href="https://www.instagram.com/bazis_pont/" target="_blank"><i
+                class="fab fa-instagram" style="color: palevioletred;"></i>
+              <p class="con">instagram.com/bazis_pont</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-up" class="urlap">
+        <p class="title" style="font-size: 32px;">Imádkkozhatunk érted?</p>
+        <p class="altitle">Hiszünk abban, hogy Isten válaszol és cselekszik, amikor imádkozunk. Ha szükséged
+          lenne
+          ima támogatásra, írj nekünk – akár név nélkül – és imádkozni fogunk érted!</p>
+        <div>
+          <form method="post">
+            <input required name="imanev" type="text" placeholder="Neved">
+            <input required name="imaemail" type="email" placeholder="Email címed">
+            <input required name="imauzenet" type="text" placeholder="Imakérésed">
+            <button type="submit">
+              <p class="altitle">Imakérés elküldése</p>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div data-aos="fade-up-left" class="urlap">
+        <p class="title" style="font-size: 32px;">Hírlevél</p>
+        <p class="altitle">Szeretnél értesülni a legfrissebb híreinkről, kirándulásról, táborokról és videókról?
+          Add
+          meg keresztneved és e-mail címed, és máris azon kiváltságosak között leszel, akik elsőként
+          értesülnek
+          gyülekezetünk híreiről.
+        </p>
+        <div>
+          <form method="post">
+            <input name="email" required type="email" placeholder="Legjobb Email címed"><br>
+            <input name="nev" required type="text" placeholder="Keresztneved">
+            <p>Hozzájárulok, hogy az adataim biztonságosan<br>kezeljétek az adatvédelem alapján.<input required
+                type="checkbox" name="hozzajarulas" style="width: unset;"></p>
+            <button type="submit">
+              <p class="altitle">Feliratkozom a hírlevélre</p>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tartalom -->
+
+  <!-- Footer -->
+  <div style="background-color:rgba(0, 0, 0, 0.3)">
+    <div data-aos="fade-up" id="ittis">
+      <a href="#ittis">
+        <p class="title">Megtalálhatsz minket itt is!</p>
+      </a>
+      <div class="flex">
+        <div class="bigbox"><a target="_blank" href="https://open.spotify.com/show/4CbSNbMBZmcwia1KIaqFUE">
+            <div class="flex"><i class="bigi fab fa-spotify"></i></div>
+            <p class="altitle">Spotyfi Podcast</p>
+        </div></a>
+        <div class="bigbox"><a target="_blank" href="https://www.youtube.com/@pecelibaptista">
+            <div class="flex"><i class="bigi fab fa-youtube"></i></div>
+            <p class="altitle">YouTube Csatornánk</p>
+        </div></a>
+        <div class="bigbox"><a target="_blank"
+            href="https://podcasts.apple.com/us/podcast/p%C3%A9celi-baptista-gy%C3%BClekezet/id1644896982">
+            <div class="flex"><i class="bigi fab fa-apple"></i></div>
+            <p class="altitle">Apple Podcast</p>
+        </div></a>
+        <div class="bigbox"><a target="_blank"
+            href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy82ZjhiNzczOC9wb2RjYXN0L3Jzcw">
+            <div class="flex"><i class="bigi fab fa-google"></i></div>
+            <p class="altitle">Google Podcast</p>
+        </div></a>
+        <div class="bigbox"><a target="_blank" href="https://www.tiktok.com/@pecelibaptistagyulekezet">
+            <div class="flex"><i class="bigi fab fa-tiktok"></i></div>
+            <p class="altitle">TikTok Oldalunk</p>
+        </div></a>
+        <div class="bigbox"><a target="_blank" href="https://music.amazon.com/">
+            <div class="flex"><i class="bigi fab fa-amazon"></i></div>
+            <p class="altitle">Amazon Podcast</p>
+        </div></a>
+      </div>
+    </div>
+    <hr class="foohr">
+    <div
+      style="display:flex; justify-content:center; padding: top 10px; background-color:transparent; padding-top: 0px;"
+      class="section">
+      <div class="linkekparent">
+        <a href="kapcsolat.html">
+          <p class="altitle" style="margin: 10px 0px;cursor: pointer;">Csatlakozási lehetőségek</p>
+        </a>
+        <a href="https://www.youtube.com/@pecelibaptista/streams" target="_blank">
+          <p class="footerpoint">Élőben</p>
+        </a><a href="https://www.youtube.com/@pecelibaptista/featured" target="_blank">
+          <p class="footerpoint">Online</p>
+        </a><a href=" index.html#ub">
+          <p class="footerpoint">Uzonyi Barnabás</p>
+        </a><a href=" index.html#kapcsolat">
+          <p class="footerpoint">Kapcsolat</p>
+        </a>
+      </div>
+      <div class="linkekparent">
+        <a href="kapcsolat.html#csempe">
+          <p class="altitle" style="margin: 10px 0px; cursor: pointer;">Videós tartalmak
+          </p>
+        </a>
+        <a href="milyen-az-isten.html">
+          <p class="footerpoint">Milyen az Isten?</p>
+        </a>
+        </a><a href="nem-vagyok-jol.html">
+          <p class="footerpoint">Nem vagyok jól</p>
+        </a>
+        </a><a href="parkapcsolat.html">
+          <p class="footerpoint">Párkapcsolat</p>
+        </a>
+      </div>
+      <div class="linkekparent">
+        <a href="alkalmak.html">
+          <p class="altitle" style="margin: 10px 0px; cursor: pointer;">Alkalmaink</p>
+        </a><a href="bibliaora.html">
+          <p class="footerpoint">Csütörtöki bibliatanulmányozás</p>
+        </a><a href="bazispont.html">
+          <p class="footerpoint">Ifjúsági alkalmak</p>
+        </a><a href="vasarnap.html">
+          <p class="footerpoint">Vasárnapi gyülekezet</p>
+        </a><a href="kiscsop.html">
+          <p class="footerpoint">Kiscsoportok</p>
+        </a>
+      </div>
+    </div>
+    <div class="flex">
+      <p style="text-align:center;margin:20px 10px 10px 10px">© 2023 Péceli Baptista Gyülekezet</p>
+      <a href="adatkezeles.html">
+        <p class="adat">
+          Adatkezelés</p>
+      </a>
+    </div>
+  </div>
+  <nav class="navbar hide" id="navbarrr">
+    <div class="content">
+      <div class="logo">
+        <a href=" index.html"><img class="navlogo" src="src/arculat/vízjel/logo vízjel obs.png" alt="Gyülekezet"></a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="alkalmak.html">Alkalmaink</a></li>
+        <li><a href="rolunk.html">Kik vagyunk?</a></li>
+        <li><a href="kapcsolat.html">Kapcsolódj</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="loader"><img src="src/arculat/vízjel/logo.png" alt="Logó" style="width: 160px;"></div>
+
+</body>
+
+</html>
+<script>
+  AOS.init({
+    duration: 700,
+    offset: 150
+  });
+  const body = document.querySelector("body");
+  const navbar = document.querySelector(".navbar");
+  const menuBtn = document.querySelector(".menu-btn");
+  const cancelBtn = document.querySelector(".cancel-btn");
+  menuBtn.onclick = () => {
+    navbar.classList.add("show");
+    menuBtn.classList.add("hide");
+    body.classList.add("disabled");
+  }
+  cancelBtn.onclick = () => {
+    body.classList.remove("disabled");
+    navbar.classList.remove("show");
+  }
+  window.onscroll = () => {
+    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+  }
+</script>
+
+
+
+<!--
+
+- űrlapok működjenek
+- responsive
+- csempék alsóüres fix
+
+-->

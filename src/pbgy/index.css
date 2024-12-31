@@ -1,0 +1,367 @@
+/*Csempék*/
+.csempekeret {
+  width: 300px;
+  height: auto;
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+.csempe {
+  width: 300px;
+  height: 200px;
+  background-position: 50% 60%;
+  background-size: 440px;
+  background-repeat: no-repeat;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 16px;
+  border: 2px transparent solid;
+  padding: 20%;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.csempe:hover {
+  border-radius: 24px;
+  background-size: 400px;
+}
+
+.csempeborito {
+  width: 200px;
+  height: 100px;
+}
+
+.cimsor {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 3px 3px black;
+  font-weight: bold;
+  font-size: 26px;
+  pointer-events: none;
+  filter: brightness(1);
+  font-family: Standard;
+}
+
+.cimsoractive {
+  scale: 1.1;
+}
+
+/*Alkalmaink*/
+.alkvas {
+
+  width: 600px;
+  cursor: pointer;
+  height: 605px;
+  margin: 5px;
+  background-image: url(src/sotet-vas.jpg);
+  background-position: 30% 30%;
+  border-radius: 24px;
+  background-size: 1100px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.alkvas:hover {
+
+  background-size: 1200px;
+}
+
+.alkvastitle {
+  text-align: center;
+  font-size: 62px;
+  text-align: left;
+  padding-top: 470px;
+  margin-left: 20px;
+
+
+}
+
+.alkvasdesc {
+  font-size: 18px;
+  margin-left: 25px;
+}
+
+.alkcsut {
+  width: 300px;
+  cursor: pointer;
+  height: 300px;
+  margin: 5px;
+  background-image: url(src/sotet-csut.jpg);
+  background-position: 50% 100%;
+  border-radius: 24px;
+  background-size: 600px;
+  background-repeat: no-repeat;
+
+}
+
+.alkcsut:hover {
+  background-size: 650px;
+
+}
+
+.alkcsuttitle {
+  text-align: center;
+  font-size: 36px;
+  text-align: left;
+  padding-top: 210px;
+  margin-left: 10px;
+}
+
+.alkcsutdesc {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.alkifi {
+  width: 300px;
+  cursor: pointer;
+  height: 300px;
+  margin: 5px;
+  background-image: url(src/sotet-ifi.jpg);
+  background-position: 0% 50%;
+  border-radius: 24px;
+  background-size: 600px;
+  background-repeat: no-repeat;
+}
+
+.alkifi:hover {
+  background-size: 650px;
+
+}
+
+.alkifititle {
+  text-align: center;
+  font-size: 36px;
+  text-align: left;
+  padding-top: 210px;
+  margin-left: 10px;
+}
+
+.alkifidesc {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.alkcsop {
+  cursor: pointer;
+  background-image: url(src/sotet-csop.jpg);
+  background-position: 50% 50%;
+  border-radius: 24px;
+  background-size: 620px;
+  height: 300px;
+  width: 610px;
+  margin: 0px;
+  background-repeat: no-repeat;
+
+}
+
+.alkcsop:hover {
+  background-size: 680px;
+
+}
+
+.alkcsoptitle {
+  text-align: center;
+  font-size: 36px;
+  text-align: left;
+  padding-top: 210px;
+  margin-left: 15px;
+}
+
+.alkcsopdesc {
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+/*Uzonyi Barnabás*/
+.ubparent {
+  display: flex;
+  max-width: 1200px;
+  margin: 0px auto;
+  justify-content: center;
+}
+
+
+
+.ubhr {
+  width: 130px;
+  margin: 0px auto;
+  margin: 25px auto
+}
+
+.ubkep {
+  width: 520px;
+  height: 520px;
+  max-width: 100%;
+  margin: 10px auto;
+}
+
+.cont {
+  margin-top: 83px;
+}
+
+.ubdesc {
+  height: 500px;
+  margin: 10px auto;
+  padding: 5px;
+  width: 600px;
+  font-size: 240px;
+  text-align: justify;
+}
+
+@media (max-width: 796px) {
+  .ubdesc {
+    text-align: center;
+  }
+
+  .ubparent .cont {
+    text-align: center;
+    margin: 10px;
+  }
+}
+
+/*Űrlapok*/
+
+.kapcsolat a {
+  color: white;
+}
+
+form {
+  text-align: center;
+  justify-content: center;
+  padding-right: 25px;
+}
+
+.map {
+  margin: 10px;
+  border-radius: 16px;
+  border: rgb(181, 140, 64) solid 2px;
+  max-width: 96%;
+  overflow: hidden;
+
+}
+
+input {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 8px;
+  color: wheat;
+  margin: 10px;
+  border-bottom: 1px solid rgb(181, 140, 64);
+  width: 100%;
+}
+
+input * {
+  text-align: center;
+}
+
+.kapcsolathr {
+  width: 130px;
+  margin: 0px auto;
+  margin: 25px auto
+}
+
+.urlap {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  margin: 10px 10px;
+  border: 2px solid rgb(181, 140, 64);
+  padding: 10px;
+  max-width: 100%;
+  border-radius: 16px;
+}
+
+.con {
+  align-items: center;
+  display: flex;
+}
+
+@media (max-width: 438px) {}
+
+.conkeret {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/*Új vagyok*/
+
+@media (max-width: 600px) {
+  .overvideo {
+    padding: 110px 5px 5px 5px;
+    width: 300px;
+  }
+  .alsomaintext{
+    margin-top: 80px; margin-bottom:500px
+  }
+  .alkcsop {
+    width: 300px;
+    cursor: pointer;
+    height: 300px;
+    margin: 5px;
+    background-image: url(src/sotet-csop.jpg);
+    background-position: 50% 100%;
+    border-radius: 24px;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    margin: 5px auto;
+
+  }
+
+  .alkcsop:hover {
+    background-size: 650px;
+
+  }
+
+  .alkcsoptitle {
+    text-align: center;
+    font-size: 36px;
+    text-align: left;
+    padding-top: 185px;
+    margin-left: 10px;
+  }
+
+  .alkcsopdesc {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+
+
+  .alkvas {
+    width: 300px;
+    cursor: pointer;
+    height: 300px;
+    margin: 5px;
+    background-image: url(src/sotet-vas.jpg);
+    background-position: 50% 100%;
+    border-radius: 24px;
+    background-size: 600px;
+    background-repeat: no-repeat;
+
+  }
+
+  .alkvas:hover {
+    background-size: 650px;
+
+  }
+
+  .alkvastitle {
+    text-align: center;
+    font-size: 36px;
+    text-align: left;
+    padding-top: 185px;
+    margin-left: 10px;
+  }
+
+  .alkvasdesc {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+}

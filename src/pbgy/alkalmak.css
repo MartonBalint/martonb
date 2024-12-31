@@ -1,0 +1,72 @@
+.alkpic {
+  width: 600px;
+  height: 500px;
+  background-color: red;
+  margin: 10px;
+  border-radius: 16px;
+  border: 2px solid rgb(181, 140, 64);
+  background-size: 1000px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.alkdesc {
+  width: 1000px;
+  margin: 10px;
+  justify-content: center;
+
+  text-align: center;
+}
+.alkdesc p{
+  margin: 10px auto;
+  max-width: 750px;
+}
+.alkhr {
+  width: 80%;
+  margin: 0px auto;
+  height: 2px;
+  opacity: .6;
+}
+
+.alkpics {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 1000px;
+}
+
+.pic {
+  height: 200px;
+  width: 300px;  border: 2px solid rgb(181, 140, 64);
+
+  border-radius: 12px;
+  margin: 10px;
+  background-size: 360px;
+  background-repeat: no-repeat;
+}
+button p {
+  text-decoration: none
+  ;margin: 10px;
+}
+
+button {padding: 10px 20px;}
+
+button *{
+  text-decoration: none;
+}
+.alkdetail{
+  height: 20px;
+}
+.alkdetail *{
+  text-align: left;
+  color: rgb(181, 140, 64);
+
+}
+
+.alkicon{
+  font-size: 18px;
+  display: flex;
+  visibility: visible;
+  cursor: default;
+  color: rgb(181, 140, 64);
+}

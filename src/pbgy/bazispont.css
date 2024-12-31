@@ -1,0 +1,46 @@
+.ificsoportkep {
+  margin: 10px auto;
+  width: 1000px;
+  border: rgb(181, 140, 64) solid 2px;
+
+}
+
+html {
+  margin: 0px;
+}
+
+.ifiifi {
+  font-size: 32px;
+}
+
+.ifispotify {
+  border: rgb(181, 140, 64) solid 2px;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.ifihr {
+  width: 150px;
+  margin: 0px auto;
+  margin: 10px auto
+}
+
+.telefon {
+  width: 500px;
+}
+
+.ifidesc {
+  width: 560px;
+  border: rgb(181, 140, 64) solid 2px;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+}
+
+.ifikep{
+  width: 300px;
+  margin: 10px;  border: rgb(181, 140, 64) solid 2px;
+
+}

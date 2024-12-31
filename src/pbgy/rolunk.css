@@ -1,0 +1,34 @@
+.bigd:hover {
+  color: black;
+}
+
+.bigd {
+  margin-bottom: 20px;
+  align-items: baseline;
+}
+
+.szoveg {
+  margin: 0px 30px;
+  max-width: 600px;
+}
+
+.bigbox {
+  text-align: center;
+  margin: 0px auto;
+}
+
+.fooldal_box {
+  width: 300px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.fooldal_box img {
+  width: 160px;
+}
+
+.rule {
+  width: 300px;
+  margin: 20px auto;
+  text-align: center;
+}

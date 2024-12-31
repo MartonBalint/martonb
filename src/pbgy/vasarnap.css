@@ -1,0 +1,46 @@
+.vasdesc {
+    max-width: 1000px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.vaspic {
+    width: 100%;
+}
+
+.vaskeret {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.lejatszasilista {
+    margin: 10px auto;
+}
+
+.rule {
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.rule img{
+    width: 200px;
+    margin: auto;
+    text-align: center;
+  }
+.rule {
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+.fooldal_box {
+    width: 300px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.fooldal_box img {
+    width: 160px;
+}

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="hu">
+<style>
+  /*Innentől lefele kupi van*/
+
+
+.people {
+  width: 300px;
+  margin: 20px auto;
+  box-shadow: black 0px 0px 12px 0px;
+  padding: 10px;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.ogomb {
+  text-align: center;
+  margin: 50px;
+}
+
+.ogomb img {
+  width: 300px;
+}
+
+.ogomb img:hover {
+  scale: .9;
+  filter: blur(1.5px);
+}
+
+.ogomb p:hover {
+  font-size: 20px;
+  text-shadow: black 2px 2px 2px;
+}
+
+.csatlakozz {
+  width: 200px;
+}
+
+.linkekparent {
+  margin: 0px auto 20px auto;
+  text-align: left;
+}
+
+.csatlakozzdesc {
+  margin: auto;
+}
+
+.csatlakozasgomb {
+  border: 2px solid rgb(34, 54, 63);
+  border-radius: 12px;
+  width: fit-content;
+  height: auto;
+  margin: 10px auto;
+}
+
+.csatlakozzparent {
+  margin: 0px auto;
+  width: 380px;
+  border-radius: 12px;
+  text-align: center;
+  align-items: center;
+  height: 550px;
+
+}
+
+.csatlakozzparent ul {
+  margin: 10px 30px;
+  text-align: left;
+}
+
+.csatlakozzparent ul li {
+  margin: 10px;
+}
+
+.ittahelyeddesc {
+  max-width: 1000px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.alkalmaink {
+  text-align: center;
+  margin: 0px auto;
+}
+
+.alkalmainkparent {
+  display: flex;
+  margin: 10px auto;
+  justify-content: center;
+}
+
+.alkalmainkdesc {
+  width: 400px;
+  margin: 10px;
+  height: 300px;
+}
+
+.bevezeto {
+  justify-content: center;
+  display: flex;
+}
+
+.rbemutato {
+  border: rgb(181, 140, 64) 2px solid;
+  width: fit-content;
+  border-radius: 12px;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+.bevparent {
+  margin: 20px;
+}
+
+.csatlakozgrand {
+  box-shadow: black 0px 0px 12px 0px;
+  border-radius: 24px;
+  margin: 10px auto;
+}
+
+.sectionittis {
+  background-color: rgba(0, 0, 0,.2);
+  max-width: 100%;
+  overflow: hidden;
+  height: fit-content;
+  border-radius: 32px;
+  margin: 18px;
+}
+
+.itttis{background-color: gray; width:100%; height:200px; opacity: 0.2;height:fit-content}
+
+
+.taborfoto {
+  width: 360px;
+}
+
+.arrow {
+  font-size: 3vw;
+  color: rgb(181, 140, 64);
+  text-shadow: black 2px 2px;
+  cursor: unset;
+}
+
+.jelentkezesbox {
+  border: rgb(181, 140, 64) solid 2px;
+  border-radius: 16px;
+  margin: 10px 10px;
+}
+
+.jelentkezesbox:hover {
+  background-color: rgba(181, 140, 64, .1);
+}
+
+.taborcsoportkep {
+  border: rgb(181, 140, 64) solid 2px;
+  display: flex;
+}
+
+.tabormargin {
+  margin: 20px;
+  width: 400px;
+}
+
+.gyerektaborleiras {
+  display: flex;
+  border: rgb(181, 140, 64) solid 2px;
+  border-radius: 16px;
+  max-width: 1350px;
+  justify-content: center;
+  margin: 0px auto;
+}
+
+.taborleiras {
+  display: flex;
+  justify-content: center;
+}
+
+.taborleirasbox {
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+}
+
+.gyerekbox {
+  display: flex;
+  margin: 0px auto;
+  align-items: center;
+  margin: 10px;
+}
+
+.gyerekszoveg {
+  width: 400px;
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+}
+.leftarrow {
+  animation: leftarrow 1s ease-in-out infinite alternate;
+}
+
+.rightarrow {
+  animation: rightarrow 1s ease-in-out infinite alternate;
+}@keyframes leftarrow {
+  from {
+    margin: 0px 30px 0px 0px;
+  }
+
+  to {
+    margin: 0px 10px 0px 20px;
+  }
+}
+
+@keyframes rightarrow {
+  from {
+    margin: 0px 0px 0px 30px;
+  }
+
+  to {
+    margin: 0px 20px 0px 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="navbar/nav.css">  <link rel="icon" href="src/arculat/vízjel/logo.png">
+  <script src="script.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <title>Péceli Baptista Gyülekezet</title>
+</head>
+
+<body class="disabled">
+
+<!-- Tartalom -->
+
+ <!-- Bevezető szöveg [section 2 bevezeto flex] -->
+ <div class="section bevezeto flex" id="gombok">
+  <div class="bevparent">
+    <img style="width: 600px;" src="src/kozosseg.jpg" alt="Közösség"></div>
+  <div class="bevparent" style="display: flex; max-width: 50%">
+    <p class="altitle">KÖZÖSSÉG NÉLKÜL NINCS GYÜLEKEZET</p>
+    <p>Nagyon hálásak vagyunk a mai modern technikai megoldásokért, hogy a világ bármelyik részéről online is
+      kényelmesen be lehet kapcsolódni a gyülekezeti programokba online. Hisszük, hogy ezen keresztül Isten
+      szeretete olyan területekre érhet el, ahová korábban el se tudtuk volna képzelni. De azt is hisszük,
+      hogy Istennek konkrét terve van veled egy konkrét gyülekezet életében offline. Ha Isten hozzánk vezet
+      téged, akkor szeretnénk segítségedre lenni akár lelkigondozásban, vagy épp abban, hogy új barátokat
+      találhass egy kisebb csoporton belül. Szeretnénk segíteni, hogy megtaláld az elhívásod, a szolgálatod,
+      mert hisszük, hogy rád is szükség van Isten országában. Valahol a gyülekezetben lehet, hogy pont a te
+      kirakó darabod hiányzik épp most a teljes képből. Bátorítunk, hogy vedd a bátorságot és gyere el
+      hozzánk. Megígérjük, hogy örömmel fogunk várni!<br>
+      <br>
+      Mi, a gyülekezet tagjai mind hoztunk már egy döntést. Lehetőséget adtunk Istennek, hogy kezdjen valamit
+      az életünk nehézségeivel, kétségeinkkel, választ adjon a bennünk megfogalmazott kérdésekre, igazi örömöt
+      adó utat mutasson.<br>
+      <br>
+      Nem emiatt az egy döntésünk miatt vagyunk hívők, és nem emiatt a döntés miatt vagyunk Isten egyik
+      gyülekezetének tagjai hosszú évek óta. A folytonosságot Isten adja, aki mindezekre választ ad. Nap mint
+      nap. </p>
+  </div>
+</div>
+
+
+
+ <!-- Itt a helyed -->
+ <div class="section">
+   <p class="title">Itt a helyed köztünk!</p>
+   <p class="altitle ittahelyeddesc">Ha Isten hozzánk vezet téged, akkor szeretnénk segítségedre lenni akár
+     lelkigondozásban, vagy épp abban, hogy
+     új barátokat találhass egy kisebb csoporton belül. Szeretnénk segíteni, hogy megtaláld az elhívásod, a
+     szolgálatod, mert hisszük, hogy rád is szükség van Isten országában.</p>
+   <iframe class="lejatszasilista" width="1020" height="580" src="https://www.youtube.com/embed/D8SZiGOZaF4"
+     title="YouTube video player" frameborder="0"
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+     allowfullscreen></iframe>
+ </div>
+
+ <!-- AAAAAAAAAAAAA -->
+ <div data-aos="fade-up" class="section" style="justify-content: center;" id="gyerektabor">
+  <a href="#gyerektabor">
+    <a href="#gyerektabor">
+      <p class="title">2 hét nyári tábor Pécelen!</p>
+    </a>
+  </a>
+
+  <div style="justify-content: center;display:flex">
+
+    <div class="taborleirasbox">
+      <div data-aos="zoom-in" style="padding: 10px
+    ;"><img class="taborcsoportkep" src="src/tabor.jpg" alt="Tábor">
+      </div>
+    </div>
+  </div>
+  <div style="display: flex;justify-content:center;align-items:center;max-width: 1100px;margin:0px auto">
+    <i class="arrow hide rightarrow fas fa-long-arrow-alt-right"></i>
+    <p class="title" style="margin-right: 30px;">Jelentkez most!</p><i
+      class="arrow rightarrow fas fa-long-arrow-alt-right"></i>
+    <div class="jelentkezesbox"><a target="_blank"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfb4LyAKELwaPesmbGQlVMz2cp7Rou67pZtJBmqX7guSBEJ3w/viewform">
+        <p class="altitle">Narnia tábor<br>felsősöknek</p>
+      </a></div>
+    <div class="jelentkezesbox"><a target="_blank"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdUOOh9JaY2w_js7vcGYhBt2gdFWUgiVbIMb36SZvs8p4-I_Q/viewform">
+        <p class="altitle">Pyramid Rock tábor<br>alsósoknak</p>
+      </a></div>
+  </div>
+  <hr class="tores">
+  <div style="display: flex;justify-content:center; align-items:center">
+    <div data-aos="fade-up-right" style="display: flex; justify-content:center; align-items:center">
+      <div class="gyerekbox">
+        <img class="taborfoto" src="src/IMG_2601.jpg" alt="Fotó"></div>
+      <div class="gyerekszoveg">
+        <p class="altitle">Angol oktatás</p>
+        <p>Szeretnéd frissen tartani az angol tudásod? Fejlesztenéd is közösségben játékosan? Itt a
+          nagy
+          lehetőség,
+          bátran választhatod ezt a napi foglalkozást.</p>
+      </div>
+    </div>
+    <div data-aos="fade-up-right" style="display: flex;justify-content:center; align-items:center">
+      <div class="gyerekbox"><img class="taborfoto" src="src/IMG_3852.jpg" alt="Fotó"></div>
+
+      <div class="gyerekszoveg">
+        <p class="altitle">Sport foglalkozás</p>
+
+        <p>Napról-napra változó sport foglalkozásokkal fogtok találkozni. Van, amikor izgalmas
+          sorjátékokkal
+          készülünk máskor több sportág közül választhatod és próbálhatod ki a neked legjobban
+          tetszőt!
+          Pl: foci, méta, kidobós</p>
+      </div>
+    </div>
+  </div>
+  <hr class="tores">
+  <div style="display: flex;justify-content:center;">
+    <div data-aos="fade-up-left" style="display: flex; justify-content:center; align-items:center">
+      <div class="gyerekszoveg">
+        <p class="altitle">Kézműves foglalkozás</p>
+        <p>Nagyon szeretünk mindenféle kreatív foglalkozásokat szervezni nektek, mert azt látjuk,
+          nagyon
+          élvezitek!
+          Pólófestés, batikolás, festés, rajzolás és mindenféle dekorációs dísz készítésre volt
+          lehetőség
+          korábban
+          – 2023-ban is nagyszerű lehetőségek várnak rád!</p>
+      </div>
+      <div class="gyerekbox"><img class="taborfoto" src="src/IMG_20210812_113223.jpg" alt="Fotó">
+      </div>
+    </div>
+    <div data-aos="fade-up-left" style="display: flex;justify-content:center; align-items:center">
+      <div class="gyerekszoveg">
+        <p class="altitle">Vidám játék</p>
+        <p>Nagyszerű lehetőség sok sok vidám játékkal készülni nektek! Csapat munka, ahol mindenki
+          megmutathatja
+          miben tehetséges, és a végén kész egy-egy műalkotás, színdarab, tánc koreográfia.</p>
+      </div>
+      <div class="gyerekbox"><img class="taborfoto"
+          src="src/235361386_5867018536705595_6629980206855139611_n.jpg" alt="Fotó">
+      </div>
+    </div>
+  </div>
+
+  <div style="margin: 10px;">
+    <div data-aos="zoom-out" class="gyerektaborleiras">
+      <div class="taborleiras">
+        <div style="justify-content: center;" class="tabormargin">
+          <p class="altitle">Időpontok</p>
+          <p style="text-align: center;">Alsó tagozat: 2023.07.31 – 08.04.<br>Felső tagozat:
+            2023.08.07–08.11.
+          </p>
+        </div>
+        <div style="justify-content: center;" class="tabormargin">
+          <p class="altitle">Miért gyere el táborba?
+          </p>
+          <p style="text-align: center;">Új barátokat szerezhetsz<br>
+            Izgalmas történeteket hallhatsz a Bibliából<br>
+            Kipróbálhatod magad különböző sportokban<br>
+            Kalandokban vehetsz részt<br>
+          </p>
+        </div>
+        <div style="justify-content: center;" class="tabormargin">
+          <p class="altitle">Részvételi díj</p>
+          <p style="text-align: center;">17.000Ft/gyermek – 5 nap<br>Testvér kedvezmény: 10%
+            (15.500Ft/
+            testvér)<br>Fizetési határidő: 2023.07.21.
+          </p>
+        </div>
+      </div>
+    </div>
+    <p class="altitle">Eddigi táboraink</p>
+    <div style="display: flex;justify-content:center" class="taborvideok">
+      <iframe class="lejatszasilista" width="1020px" height="580px"
+        src="https://www.youtube.com/embed/videoseries?list=PLtXazojwx0hYrJsM2iswYlMS0pquA5bDf"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+<!-- Tartalom -->
+
+  <!-- Footer -->
+  <div style="background-color:rgba(0, 0, 0, 0.3)">
+    <div data-aos="fade-up" id="ittis">
+      <a href="#ittis">
+        <p class="title">Megtalálhatsz minket itt is!</p>
+      </a>
+      <div class="flex">
+        <div class="bigbox"><a target="_blank" href="https://open.spotify.com/show/4CbSNbMBZmcwia1KIaqFUE">
+            <div class="flex"><i class="bigi fab fa-spotify"></i></div>
+            <p class="altitle">Spotyfi Podcast</p>
+        </div></a>
+        <div class="bigbox"><a target="_blank" href="https://www.youtube.com/@pecelibaptista">
+            <div class="flex"><i class="bigi fab fa-youtube"></i></div>
+            <p class="altitle">YouTube Csatornánk</p>
+        </div></a>
+        <div class="bigbox"><a target="_blank"
+            href="https://podcasts.apple.com/us/podcast/p%C3%A9celi-baptista-gy%C3%BClekezet/id1644896982">
+            <div class="flex"><i class="bigi fab fa-apple"></i></div>
+            <p class="altitle">Apple Podcast</p>
+        </div></a>
+        <div class="bigbox"><a target="_blank"
+            href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy82ZjhiNzczOC9wb2RjYXN0L3Jzcw">
+            <div class="flex"><i class="bigi fab fa-google"></i></div>
+            <p class="altitle">Google Podcast</p>
+        </div></a>
+        <div class="bigbox"><a target="_blank" href="https://www.tiktok.com/@pecelibaptistagyulekezet">
+            <div class="flex"><i class="bigi fab fa-tiktok"></i></div>
+            <p class="altitle">TikTok Oldalunk</p>
+        </div></a>
+        <div class="bigbox"><a target="_blank" href="https://music.amazon.com/">
+            <div class="flex"><i class="bigi fab fa-amazon"></i></div>
+            <p class="altitle">Amazon Podcast</p>
+        </div></a>
+      </div>
+    </div>
+    <hr class="foohr">
+    <div
+      style="display:flex; justify-content:center; padding: top 10px; background-color:transparent; padding-top: 0px;"
+      class="section">
+      <div class="linkekparent">
+        <a href="kapcsolat.html"><p class="altitle" style="margin: 10px 0px;cursor: pointer;">Csatlakozási lehetőségek</p></a>
+          <a href="https://www.youtube.com/@pecelibaptista/streams" target="_blank">
+          <p class="footerpoint">Élőben</p>
+        </a><a href="https://www.youtube.com/@pecelibaptista/featured" target="_blank">
+          <p class="footerpoint">Online</p>
+        </a><a href=" index.html#ub">
+          <p class="footerpoint">Uzonyi Barnabás</p>
+        </a><a href=" index.html#kapcsolat">
+          <p class="footerpoint">Kapcsolat</p>
+        </a>
+      </div>
+      <div class="linkekparent">
+        <a href="kapcsolat.html#csempe"><p class="altitle" style="margin: 10px 0px; cursor: pointer;">Videós tartalmak
+        </p></a>
+        <a href="milyen-az-isten.html">
+          <p class="footerpoint">Milyen az Isten?</p>
+        </a>
+        </a><a href="nem-vagyok-jol.html">
+          <p class="footerpoint">Nem vagyok jól</p>
+        </a>
+        </a><a href="parkapcsolat.html">
+          <p class="footerpoint">Párkapcsolat</p>
+        </a>
+      </div>
+      <div class="linkekparent">
+        <a href="alkalmak.html">
+          <p class="altitle" style="margin: 10px 0px; cursor: pointer;">Alkalmaink</p>
+        </a><a href="bibliaora.html">
+          <p class="footerpoint">Csütörtöki bibliatanulmányozás</p>
+        </a><a href="bazispont.html">
+          <p class="footerpoint">Ifjúsági alkalmak</p>
+        </a><a href="vasarnap.html">
+          <p class="footerpoint">Vasárnapi gyülekezet</p>
+        </a><a href="kiscsop.html">
+          <p class="footerpoint">Kiscsoportok</p>
+        </a>
+      </div>
+    </div>
+    <div class="flex">
+      <p style="text-align:center;margin:20px 10px 10px 10px">© 2023 Péceli Baptista Gyülekezet</p>
+      <a href="adatkezeles.html">
+        <p class="adat">
+          Adatkezelés</p>
+      </a>
+    </div>
+  </div>
+  <nav class="navbar hide" id="navbarrr">
+    <div class="content">
+      <div class="logo">
+        <a href=" index.html"><img class="navlogo" src="src/arculat/vízjel/logo vízjel obs.png" alt="Gyülekezet"></a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="alkalmak.html">Alkalmaink</a></li>
+        <li><a href="rolunk.html">Kik vagyunk?</a></li>
+        <li><a href="kapcsolat.html">Kapcsolódj</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="loader"><img src="src/arculat/vízjel/logo.png" alt="Logó" style="width: 160px;"></div>
+
+</body>
+
+</html>
+<script>
+  AOS.init({
+    duration: 700,
+    offset: 150
+  });
+  const body = document.querySelector("body");
+  const navbar = document.querySelector(".navbar");
+  const menuBtn = document.querySelector(".menu-btn");
+  const cancelBtn = document.querySelector(".cancel-btn");
+  menuBtn.onclick = () => {
+    navbar.classList.add("show");
+    menuBtn.classList.add("hide");
+    body.classList.add("disabled");
+  }
+  cancelBtn.onclick = () => {
+    body.classList.remove("disabled");
+    navbar.classList.remove("show");
+  }
+  window.onscroll = () => {
+    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+  }
+</script>
