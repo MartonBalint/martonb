@@ -1,0 +1,515 @@
+/*HTML*/
+* {
+    margin: 0px;
+    scroll-behavior: smooth;
+    user-select: none;
+    -webkit-user-drag: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: .5s;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    width:100vw;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: whitesmoke;
+}
+
+.desc {
+    font-size: 18px;
+    color: whitesmoke;
+    text-shadow: 0 0 20px red;
+}
+
+.title {
+    transition: .3s;
+    font-size: 24px;
+    color: whitesmoke;
+    text-shadow: 0 0 20px red;
+    margin: 10px;
+    margin-bottom: 5px;
+    width: fit-content;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title:hover {
+    transition: .5s;
+    color: rgba(255, 0, 0, 0.5);
+    text-shadow: 0 0 20px transparent;
+}
+
+.hover {
+    transition: .5s;
+    text-shadow: 0 0 20px transparent;
+    color: rgba(255, 0, 0, 0.5);
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.container {
+    display: flex;
+}
+
+footer {
+    border-top: 2px solid;
+    border-top-color: red;
+    min-height: 50px;
+    height: fit-content;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 0 0 20px red;
+    bottom: 0;
+    text-align: center;
+}
+
+.logo {
+    width: 60px;
+    margin: 5px 10px 0px 10px;
+    transition: .5s;
+}
+
+.logo:hover {
+    margin-right: 00px;
+    transition: .5s;
+    margin-left: 20px;
+}
+
+.topcontact {
+    display: flex;
+    margin-left: auto;
+}
+
+.bottomcontact {
+    display: flex;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.center {
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+
+hr {
+    opacity: 0.3;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: boxglow 1s ease-in-out infinite alternate;
+}
+
+
+.pcopy {
+    opacity: 0.1;
+}
+
+/*Icons*/
+.icon {
+    color: red;
+    font-size: 30px;
+    cursor: pointer;
+    transition: .3s;
+    margin: 5px;
+}
+
+.icon:hover {
+    transition: .3s;
+    color: rgba(255, 0, 0, 0.5);
+}
+
+.fire:hover {
+    transition: .3s;
+    color: rgba(255, 0, 0, 0.5);
+}
+
+
+
+/*Main Page*/
+.navbar-text {
+    margin: 15px 10px 10px 10px;
+}
+
+.fa-bars:before {
+    right: 0px;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    min-height: 50px;
+    height: fit-content;
+    width: 100%;
+    border-bottom: 2px solid;
+    border-bottom-color: red;
+    box-shadow: 0 0 20px red;
+    margin-bottom: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    backdrop-filter: blur(6px);
+    overflow: hidden;
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 1020px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: fixed;
+        top: 0px;
+        backdrop-filter: blur(6px);
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .navbar-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.bars {
+    margin: 13px 10px 10px 0px;
+}
+
+.fooldalframe {
+    transition: .3s;
+    background-color: black;
+    height: auto;
+    min-height: 100px;
+    width: auto;
+    max-width: 400px;
+    border-radius: 12px;
+    margin: 10px;
+    border: 2px solid red;
+    border-radius: 12px;
+    left: 0;
+    max-height: 600px;
+    padding-bottom: 5px;
+}
+
+.fooldalframe:hover {
+    transition: .3s;
+    background-color: rgba(255, 0, 0, 0.08);
+    animation: boxglow 1s ease-in-out infinite alternate;
+
+}
+
+.fooldal {
+    background-color: black;
+    height: auto;
+    width: auto;
+    border-radius: 12px;
+    margin: 10px;
+}
+
+.me {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.metitle {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.medesc {
+    margin: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+.space {
+    min-height: 80px;
+}
+
+
+
+/*Task*/
+.taskframe {
+    margin: 10px;
+}
+
+.task {
+    transition: .3s;
+    min-height: 20px;
+    border-radius: 8px;
+    border: 1px solid red;
+    margin: 5px;
+    padding: 5px;
+}
+
+.task:hover {
+    transition: .3s;
+    background-color: rgba(255, 0, 0, 0.08);
+    animation: boxglow 1s ease-in-out infinite alternate;
+}
+
+.navlanguageicon {
+    color: red;
+    font-size: 28px;
+    cursor: pointer;
+    transition: .3s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 16px 50px 0px 0px;
+}
+
+.navlanguageicon:hover {
+    transition: .3s;
+    color: rgba(255, 0, 0, 0.5);
+}
+
+.languageicon {
+    color: red;
+    font-size: 28px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.languageicon:hover {
+    transition: .3s;
+    color: rgba(255, 0, 0, 0.5);
+}
+
+
+
+/*Must see*/
+.see {
+    border-radius: 12px;
+    margin: 30px 30px 20px 30px;
+    border: 2px solid red;
+    transition: .5s;
+}
+
+
+.see:hover {
+    margin: 20px 30px 30px 30px;
+}
+
+/*Project*/
+.project {
+    min-height: 500px;
+    max-width: 300px;
+    transition: .3s;
+    border: 2px solid red;
+    border-radius: 12px;
+    text-align: center;
+    padding: 5px;
+    margin: 30px;
+}
+
+.project:hover {
+    transition: .3s;
+    animation: boxglow 1s ease-in-out infinite alternate;
+}
+
+.projectlogo {
+    transition: .3s;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 160px;
+    border-radius: 360px;
+    border: 2px solid transparent;
+}
+
+.projectlogo:hover {
+    border: 2px solid red;
+    transition: .3s;
+    animation: boxglow 1s ease-in-out infinite alternate;
+}
+
+.tuzroka {
+    width: 298px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+}
+
+.rokadesc {
+    margin: 10px;
+}
+
+.e {
+    margin: 30px auto 0px auto;
+    transition: .3s;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 160px;
+}
+
+/*Certification*/
+.certification {
+    min-height: 420px;
+    max-width: 300px;
+    transition: .3s;
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 12px;
+    text-align: center;
+    margin: 30px;
+}
+
+.certification:hover {
+    transition: .3s;
+    background-color: rgba(255, 0, 0, 0.08);
+    animation: boxglow 1s ease-in-out infinite alternate;
+}
+
+.certificationlogo {
+    transition: .3s;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 200px;
+    border: 2px solid transparent;
+    border-radius: 26px;
+}
+
+.certificationlogo:hover {
+    border: 2px solid red;
+    transition: .3s;
+    border-radius: 26px;
+    animation: boxglow 1s ease-in-out infinite alternate;
+}
+
+
+
+/*Experience*/
+.video {
+    border-radius: 12px;
+    margin: 30px;
+    border: 2px solid red;
+}
+
+.video:hover {
+    animation: boxglow 1s ease-in-out infinite alternate;
+}
+
+
+
+/*Animation*/
+.boxglow {
+    animation: boxglow 1s ease-in-out infinite alternate;
+}
+
+.textglow {
+    animation: textglow 1s ease-in-out infinite alternate;
+    margin: 5px;
+}
+
+@keyframes textglow {
+    from {
+        text-shadow: 0 0 1px white, 0 0 2px white;
+    }
+
+    to {
+        text-shadow: 0 0 3px white, 0 0 4px white;
+    }
+}
+
+@keyframes boxglow {
+    from {
+        box-shadow: 0 0 1px red, 0 0 2px red, 0 0 3px red, 0 0 4px red;
+    }
+
+    to {
+        box-shadow: 0 0 6px red, 0 0 7px red, 0 0 8px red, 0 0 9px red, ;
+    }
+}
+
+/*Loading SCR*/
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    border: 5px solid red;
+    border-top-color: #111;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+from {
+    transform: rotate(0turn);
+}
+to {transform: rotate(1turn);}
+
+}
