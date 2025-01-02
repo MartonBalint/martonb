@@ -18,7 +18,6 @@ body {
     padding: 0;
     width: 100vw;
     height: 100vh;
-    padding-top: 30px;
     background-image: linear-gradient(rgba(105, 220, 255, 0.705), rgba(0, 153, 255, 0.76));
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -54,12 +53,25 @@ section {
 }
 
 a {
-    text-decoration: none;
-    background-color: transparent;
-    border-color: transparent;
-    box-shadow: transparent;
-}
-
+    text-decoration: none; 
+    outline: none;         
+    box-shadow: none;      
+  }
+  a:focus {
+    outline: none;         
+    box-shadow: none;      
+  }
+  a div {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  a:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: rgba(0, 0, 255, 0.0);
+  }
+  
 p {
     color: rgb(0, 0, 0);
 }
@@ -83,6 +95,8 @@ p {
     margin-right: auto;
     text-decoration: none;
 }
+.title2{font-size: 26px; margin: 10px 10px 10px 0px;}
+.title3{font-size: 20px; margin-bottom: 10px;}
 
 .cardtitle {
     height: fit-content;
@@ -189,7 +203,11 @@ footer {
     margin: 10px 10px 10px 10px;
     color: whitesmoke;
 }
-.navbar-text:hover{color: rgba(255, 255, 255, 0.6);}
+
+.navbar-text:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
 .fa-bars:before {
     right: 0px;
 }
@@ -312,7 +330,7 @@ header {
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(30px);
     margin: 30px;
-    box-shadow: 2px 2px 12px;
+    box-shadow: 2px 2px 12px black;
     padding: 10px;
     text-decoration: none;
 }
@@ -379,6 +397,20 @@ header {
     border-radius: 26px;
 }
 
+.honlappart {
+    min-height: 500px;
+    max-width: 400px;
+    transition: .3s;
+    border-radius: 12px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(30px);
+    margin: 30px;
+    box-shadow: 2px 2px 12px;
+    padding: 10px;
+    text-decoration: none;
+}
+b {margin: 5px;}
 /*Loading SCR*/
 .loader {
     position: fixed;
