@@ -19,12 +19,31 @@ body {
     width: 100vw;
     height: 100vh;
     padding-top: 30px;
-    /*background-image: url("img/bg.png");*/
-    background-image: linear-gradient(rgb(105, 220, 255), rgb(196, 152, 255));
+    background-image: linear-gradient(rgba(105, 220, 255, 0.705), rgba(0, 153, 255, 0.76));
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+}
+
+.shelbyphoto {
+    background-image: url(img/paper.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: whitesmoke;
+    width: 440px;
+    height: fit-content;
+    transform: rotate(-5deg);
+    box-shadow: black 5px 5px 12px;
+    margin: 10px 15px;
+    margin: 30px;
+    margin-top: 130px;
+}
+
+.shelbyphoto:hover {
+    scale: 1.02;
 }
 
 section {
@@ -36,17 +55,6 @@ section {
 
 a {
     text-decoration: none;
-}
-
-.desc2 {
-    background-color: rgba(0, 0, 0, 0.3);
-    margin: 10px;
-    border-radius: 12px;
-    width: 300px;
-    height: 200px;
-    border: 2px solid rgb(196, 152, 255);
-
-    padding: 10px;
 }
 
 p {
@@ -70,12 +78,11 @@ p {
     cursor: pointer;
     margin-left: auto;
     margin-right: auto;
+    text-decoration: none;
 }
 
-.title:hover {
-    transition: .5s;
-    color: rgb(0, 217, 255, 0.5);
-    text-shadow: 0 0 20px transparent;
+.cardtitle {
+    height: fit-content;
 }
 
 .sectiontitle {
@@ -149,7 +156,8 @@ footer {
     font-size: 30px;
     cursor: pointer;
     transition: .3s;
-    margin: 10px;text-shadow: 2px 2px 12px black;
+    margin: 10px;
+    text-shadow: 2px 2px 12px black;
 }
 
 .icon:hover {
@@ -158,11 +166,11 @@ footer {
 }
 
 .navicon {
-    font-size: 26px;text-shadow: 2px 2px 12px black;
-    margin: 10px;
+    font-size: 26px;
+    text-shadow: 2px 2px 12px black;
+    margin: 4px 10px 10px 10px;
     padding-top: 10px;
     transition: .3s;
-
     cursor: pointer;
     color: rgb(105, 220, 255);
 }
@@ -172,16 +180,10 @@ footer {
     color: rgb(0, 217, 255, 0.5);
 }
 
-.fire:hover {
-    transition: .3s;
-    color: rgb(0, 217, 255, 0.5);
-}
-
-
 
 /*Main Page*/
 .navbar-text {
-    margin: 18px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
     color: whitesmoke;
 }
 
@@ -220,7 +222,10 @@ header {
 }
 
 @media screen and (max-width: 1020px) {
-    header {display: none;}
+    header {
+        display: none;
+    }
+
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -280,6 +285,7 @@ header {
 .me {
     max-width: 100%;
     height: auto;
+    margin: 20px 0px 00px 00px;
 }
 
 .metitle {
@@ -294,15 +300,23 @@ header {
 }
 
 /*Project*/
-.project {
+.card {
     min-height: 500px;
     max-width: 300px;
     transition: .3s;
-    border: 2px solid rgb(196, 152, 255);
     border-radius: 12px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(30px);
     margin: 30px;
+    box-shadow: 2px 2px 12px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.card:hover {
+    scale: 1.02;
+    cursor: pointer;
 }
 
 .projectlogo {
@@ -346,7 +360,6 @@ header {
     transition: .3s;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 10px;
-    border: 2px solid rgb(196, 152, 255);
     border-radius: 12px;
     text-align: center;
     margin: 30px;
@@ -374,7 +387,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: #000;
-    background-image: linear-gradient(rgb(105, 220, 255), rgb(196, 152, 255));
+    background-image: linear-gradient(rgba(105, 220, 255, 0.705), rgba(0, 153, 255, 0.76));
     transition: opacity 0.75s, visibility 0.75s;
 }
 
