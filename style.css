@@ -399,7 +399,7 @@ header {
 
 .honlappart {
     min-height: 500px;
-    max-width: 400px;
+    max-width: 300px;
     transition: .3s;
     border-radius: 12px;
     text-align: left;
