@@ -341,6 +341,22 @@ header {
     cursor: pointer;
 }
 
+.maincard {
+    min-height: 500px;
+    width: 800px;
+    max-width: 100%;
+    transition: .3s;
+    border-radius: 12px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(30px);
+    margin: 10px;
+    margin-top: 80px;
+    box-shadow: 2px 2px 12px black;
+    padding: 10px;
+    text-decoration: none;
+}
+
 .projectlogo {
     transition: .3s;
     margin-left: auto;
@@ -400,13 +416,14 @@ header {
 
 .honlappart {
     min-height: 500px;
-    max-width: 300px;
+    width: 300px;
+    max-width: 100%;
     transition: .3s;
     border-radius: 12px;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(30px);
-    margin: 30px;
+    margin: 10px;
     box-shadow: 2px 2px 12px;
     padding: 10px;
     text-decoration: none;
