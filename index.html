@@ -1,384 +1,149 @@
 <!DOCTYPE html>
 <html lang="hu">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Caffenheim - A Kávézó</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/b427801ba3.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
-    <link rel="icon" href="img/b.p ng" />
-    <title>Marton Bálint</title>
 </head>
-<!-- Body -->
+<body>
 
-<body id="top">
-    <!-- Főoldal -->
-    <section style="padding-top: 50px;">
-        <a href="https://www.youtube.com/watch?v=N7oe91LoHL0&list=PLATQ8iWXs4GwxwcOAX_tdibfYTylX6ebR" target="_blank">
-            <div class="shelbyphoto">
-                <div class="fooldalframe" id="fooldal">
-                    <img class="me" src="img/me.jpg" alt="Marton Bálint">
-                    <div style="justify-content: center; text-align: center;">
-                        <p style="font-family: 'Shelby'; font-size: 64px; padding-top: 0px;margin-top: 5px;">Marton
-                            Bálint</p>
-                    </div>
-                </div>
-                <img src="img/b.png" alt=""
-                    style="transform: rotate(24deg); position: absolute; top: 300px; width: 180px; left: -50px; display: none;">
-            </div>
-        </a>
-        <div style="width: 30px;"></div>
-        <div class="maincard">
-            <p style="font-size: 20px;">
-                Üdvözöllek a honlapomon!<br>
-                <br>Marton Bálint vagyok, 20 éves egyetemista, tele lelkesedéssel és kreatív ötletekkel. <a
-                    style="text-decoration: underline;" href="https://www.youtube.com/@MBalint2005"
-                    target="_blank">Megnézem!</a>
-                <br>
-                <br>Személyes értékrendem meghatározó része a hitem: hívő keresztény vagyok, és büszkén vagyok tagja a
-                Péceli Baptista Gyülekezetnek. A közösség és a hit ereje sok mindenre megtanított, és ezek az értékek
-                átszövik mindennapjaimat. <a style="text-decoration: underline;" href="https://pecelibaptista.hu/"
-                    target="_blank">Megnézem!</a>
-                <br>
-                <br>Végzettségem szerint Informatikai rendszer és alkalmazás üzemeltető technikus vagyok, és nagy
-                örömmel merülök el a technológia világában. Jelenleg Pécelen élek, ahol szabadidőmben változatos és
-                inspiráló tevékenységekkel foglalkozom: weblapokat készítek, fotózással foglalkozom, és meghibásodott
-                elektromos és okoseszközöket szerelek, valamint a kertészkedésben találok megnyugvást és harmóniát.
-                <br>
-                <br>A honlapom stílusának megalkotásakor<br> nagy hatással volt rám Lil Skies - Shelby című albuma és
-                annak vizuális designja. Ez az album nemcsak zenei inspirációt jelentett számomra, hanem arra is
-                ösztönzött, hogy a kreativitást és a személyes ízlést ötvözve egyedi és kifejező arculatot hozzak létre.
-                <a style="text-decoration: underline;"
-                    href="https://www.youtube.com/watch?v=N7oe91LoHL0&list=PLATQ8iWXs4GwxwcOAX_tdibfYTylX6ebR&index=1"
-                    target="_blank">Megnézem!</a>
-                <br>
-                <br>Kiskorom óta rajongok a zenéért: a zenehallgatás mindig is feltöltött, és az évek során magam is
-                elkezdtem saját dallamokat és kompozíciókat alkotni. Ez számomra egyfajta önkifejezési forma, amely
-                lehetővé teszi, hogy érzelmeimet és gondolataimat kreatív módon öntsem formába. <a
-                    style="text-decoration: underline;" href="https://www.youtube.com/watch?v=RBlw44C5qM0"
-                    target="_blank">Megnézem!</a></p>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#about">Rólunk</a></li>
+                    <li><a href="#menu">Kínálat</a></li>
+                    <li><a href="#gallery">Galéria</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#order">Rendelés</a></li>
+                    <li><a href="#contact">Kapcsolat</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
-    <!-- Tanulmányok -->
-    <a href="#certification">
-        <p id="certification" class="title sectiontitle">- Tanulmányok -</p>
-    </a>
-    <section>
-        <div><a href="https://www.credly.com/badges/60dd49c4-c806-4503-8f1e-b6859da9a658/public_url" target="_blank">
-                <div class="card"><img class="certificationlogo" src="img/ccna-introduction-to-networks.png"
-                        alt="caffe">
-                    <div>
-                        <p class="center title cardtitle">CCNA: Introduction to Networks</p><i
-                            class="icon fas fa-certificate"></i>
-                        <p class="desc" id="certcisco">A BMSZC Pataky István Híradásipari és Informatikai Technikum-ban,
-                            a 2022-2023-as tanévben szereztem meg.</p>
-                    </div>
-                </div>
-            </a></div>
-        <div><a href="https://www.credly.com/badges/8db086d8-88b2-442c-b695-46843386f4af/public_url" target="_blank">
-                <div class="card"><img class="certificationlogo"
-                        src="img/ccna-switching-routing-and-wireless-essentials.1.png" alt="topg">
-                    <div>
-                        <p class="center title cardtitle">CCNA: Switching, Routing, and Wireless Essentials</p><i
-                            class="icon fas fa-certificate"></i>
-                        <p class="desc" id="certciscoo">A BMSZC Pataky István Híradásipari és Informatikai
-                            Technikum-ban, a 2022-2023-as tanévben szereztem meg.</p>
-                    </div>
-                </div>
-            </a></div>
-        <div><a href="https://www.credly.com/badges/3f6937d1-768d-4db7-9b20-31daf655bafd/public_url" target="_blank">
-                <div class="card"><img class="certificationlogo" src="img/CCNAENSA__1_.png" alt="topg">
-                    <div>
-                        <p class="center title cardtitle">CCNA: Enterprise Networking, Security, and Automation</p><i
-                            class="icon fas fa-certificate"></i>
-                        <p class="desc" id="inprog">A BMSZC Pataky István Híradásipari és Informatikai Technikum-ban, a
-                            2023-2024-es tanévben szereztem meg.</p>
-                    </div>
-                </div>
-            </a></div>
-        <div><a href="src/Introduction_to_Cybersecurity_Badge20241226-28-ol9c9.pdf" target="_blank">
-                <div class="card"><img class="certificationlogo" src="img/I2CS__1_.png" alt="topg">
-                    <div>
-                        <p class="center title cardtitle">Introduction to Cybersecurity</p><i
-                            class="icon fas fa-certificate"></i>
-                        <p class="desc" id="inprog">A BMSZC Pataky István Híradásipari és Informatikai Technikum-ban, a
-                            2023-2024-es tanévben szereztem meg.</p>
-                    </div>
-                </div>
-            </a></div>
-        <div><a href="">
-                <div class="card"><img class="certificationlogo" src="img/eng.png" alt="topg">
-                    <div>
-                        <p class="center title cardtitle">English B2</p><i class="icon fas fa-certificate"></i>
-                        <p class="desc" id="inprog">Ezt a nyelvvizsgát EuroExamon szereztem. Emellett van egy jeles
-                            emelt angol érettségim. Kiskorom óta rengeteg időt töltök a számítógép elött és szinte 100%
-                            ban angolul fogyasztok minden tartalmat, a második anyanyelvemnek is nevezhetném az angolt.
-                        </p>
-                    </div>
-                </div>
-            </a></div>
-        <div><a href="src/szakma.pdf" target="_blank">
-                <div class="card"><img class="certificationlogo" src="img/wifi.png" alt="topg">
-                    <div>
-                        <p class="center title cardtitle">Informatikai Rendszer és Alkamazás Üzemeltető Technikus</p><i
-                            class="icon fas fa-certificate"></i>
-                        <p class="desc" id="inprog">2020-2025ig jártam a Pataky István Technikumba, valamint a Dombosco
-                            AKK Szalézi Képzőközpontba, és a 13. osztály végén elvégeztem a Technikusi vizsgát, és
-                            sikeresen teljesítettem minden követelményt, a vizsgaremeket is beleértve.</p>
-                    </div>
-                </div>
-            </a></div>
-        <div><a href="https://www.pataky.hu" target="_blank">
-                <div class="card"><img class="certificationlogo" src="img/cap.png" alt="topg">
-                    <div>
-                        <p class="center title cardtitle">Érettségi</p><i class="icon fas fa-certificate"></i>
-                        <p class="desc" id="inprog">A Pataky István Technikumban, kőbányán 2020-tól 2024 tavaszáig
-                            harcoltam érte.</p>
-                    </div>
-                </div>
-            </a></div><a href="https://en.wikipedia.org/wiki/Fiat_Cinquecento" target="_blank">
-            <div>
-                <div class="card">
-                    <div>
-                        <img class="certificationlogo" src="img/car.png" style="margin: 30px auto;" alt="topg">
-                        <p class="center title cardtitle">B Jogosítvány</p><i class="icon fas fa-certificate"></i>
-                        <p class="desc" id="inprog">Egy 1995-ben készült, Fiat Cinquecento büszke tulajdonosa vagyok!
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </section>
-    <!-- projektek -->
-    <a href="#project">
-        <p id="project" class="title sectiontitle">- Projektek -</p>
-    </a>
-    <section>
-        <a href="https://pecelibaptista.hu/bazis/tuzroka22/" target="_blank">
-            <div class="card"><img class="tuzroka center" src="img/tr.png" alt="roka">
-                <div>
-                    <p class="center title cardtitle">Tűzróka</p><i class="icon fas fa-cross "></i>
-                    <p id="protr" class="rokadesc desc">2022.04.23.án került megrendezésre az első Tűzróka ifjúsági
-                        konferencia, a Péceli Baptista Gyülekezetben.amin szervezőként, és fénytechnikusként vettem
-                        részt, ezen a több mint 270 fős rendezvényen. Életreszóló élmény volt és a mai napig jó érzés rá
-                        visszagondolni.</p>
-                    <p class="center title">"A tűz forróbb"</p>
-                </div>
-            </div>
-        </a>
-        <a href="https://pecelibaptista.hu/bazis/tuzroka-23/" target="_blank">
-            <div class="card"><img class="tuzroka center" src="img/tr2.png" alt="roka">
-                <div>
-                    <p class="center title cardtitle">Tűzróka 2.0</p><i class="icon fas fa-cross "></i>
-                    <p id="protr2" class="rokadesc desc">2023.04.15.én került megrendezésre a második Tűzróka ifjúsági
-                        konferencia,Budapesten a Rhema Konferencia Központban.Egy több mint 500 fős rendezvény, amin
-                        szervezőként, operatőrként, fotósként és fénytechnikusként vettem részt,és egy életreszóló
-                        élmény volt számomra, nagyon áldásos alkalom volt.</p>
-                    <p class="center title">"Több van benned"</p>
-                </div>
-            </div>
-        </a><a href="http://users.atw.hu/pbi/" target="_blank">
-            <div class="card"><img class="pbilogo center" src="img/logo vízjel obs.png" alt="roka">
-                <div>
-                    <p class="center title cardtitle">Péceli Baptista Gyülekezet</p><i class="icon fas fa-cross "></i>
-                    <p id="protr" class="rokadesc desc">Ezt a weblapot a gyülekezetem számára készítettem. Végül sajnos
-                        sosem került ki élesben mivel a vezetők inkább a WordPress mellett döntöttek a
-                        felhasználóbarátsága miatt. A Weboldal teljes tartalma a Péceli Baptista Gyülekezet tulajdonát
-                        képezi!</p>
-                    <p class="center title"></p>
-                </div>
-            </div>
-        </a>
-        <a href="https://pecelibaptista.hu/bazis/tuzroka/" target="_blank">
-            <div class="card"><img class="tuzroka center" src="img/tr3.png" alt="roka">
-                <div>
-                    <p class="center title cardtitle">Tűzróka<br>Az Evangélium Ereje</p><i
-                        class="icon fas fa-cross "></i>
-                    <p id="protr2" class="rokadesc desc">2023.04.20.án került megrendezésre a második Tűzróka ifjúsági
-                        konferencia,Budapesten a Rhema Konferencia Központban.Egy több mint 500 fős rendezvény, amin
-                        szervezőként, operatőrként, fotósként és fénytechnikusként vettem részt,és egy életreszóló
-                        élmény volt számomra, nagyon áldásos alkalom volt.</p>
-
-                </div>
-            </div>
-        </a>
-        <a href="https://pecelibaptista.hu/bazis/tuzroka-23/" target="_blank">
-            <div class="card"><img class="tuzroka center" src="img/tr2.png" alt="roka">
-                <div>
-                    <p class="center title cardtitle">Tűzróka 4</p><i class="icon fas fa-cross "></i>
-                    <p id="protr2" class="rokadesc desc">Már valami készül a háttérben...</p>
-                    <p class="center title">Gyere el te is!</p>
-                </div>
-            </div>
-        </a>
-        <a href="src/oldsite/index.html" target="_blank">
-            <div class="card"><img class="tuzroka center" src="src/oldsite/img/b.png" alt="roka"
-                    style="width: 120px; height: auto; margin-top: 20px;">
-                <div>
-                    <p class="center title cardtitle">Az első honlapom</p><i class="icon fa-solid fa-file"></i></i>
-                    <p id="protr2" class="rokadesc desc">Ez volt az első honlapom, amit 10. osztályos koromban raktam
-                        össze, rengeteg munkával. Mivel ezt a honlapomat már nem fejlesztem tovább, ezért
-                        előfordulhatnak hiányosságok.</p>
-                    <p class="center title">"A kezdetek"</p>
-                </div>
-            </div>
-        </a>
-        <a href="https://www.youtube.com/@MBalint2005" target="_blank">
-            <div class="card"><img class="tuzroka center" src="img/yt.png" alt="roka"
-                    style="width: 120px; height: auto; margin-top: 20px;">
-                <div>
-                    <p class="center title cardtitle">A Youtube csatornám</p><i class="icon fa-brands fa-youtube"></i>
-                    <p id="protr2" class="rokadesc desc">A barátaimmal készítek egy podcast sorozatot amin keresztül
-                        jobban megismerhetsz, illetve erre a csatornára töltöm fel a már említett zenéimet is.</p>
-                    <p class="center title">"Tight Road,<br>Persival Podcast"</p>
-                </div>
-            </div>
-        </a>
-    </section>
-    <!-- Honlapkészítés -->
-    <a href="#honlap">
-        <p id="honlap" class="title sectiontitle">- Weblapkészítés egyszerűen, gyorsan és precízen -</p>
-    </a>
-    <section>
-        <div class="honlappart">
-            <p class="title2">Üdvözöllek a weboldalamon!</p>
-            Én vagyok a felelős ezért az oldalért, és szívesen segítek neked is megvalósítani a saját online jelenléted.
-            Legyen szó egy bemutatkozó honlapról, céges weboldalról vagy egyedi megoldásokról, minden lépésben
-            számíthatsz rám, legyen az kódban írt weboldal mint például ez is, vagy WordPress-ben készült.
-            <p class="title2">Miért válassz engem?</p>
-            <b>Sokoldalú képességek –</b> Szinte bármilyen típusú weboldalt el tudok készíteni: céges weboldalak,
-            blogok,
-            <br>webshopok, portfóliók és egyedi igények alapján készülő oldalak.
-            <br><b>Gyors és precíz kivitelezés –</b> Rövid határidőkkel dolgozom, de a minőség mindig az első helyen
-            áll.
-            <br><b>Személyre szabott megoldások –</b> Minden projektet a te igényeid szerint tervezek meg.
-            <br><b>Számlaképes szolgáltatás –</b> Garantáltan hivatalosan dolgozom, és minden munkámról számlát adok.
-            <p class="title2">Lépj velem kapcsolatba!</p>
-            <b>E-mail:</b> martonbalint.fcb[at]gmail.com
-            <br> <b>Telefon:</b> 06206215215
-            <br> <b>Elérhetőség:</b> Hétfőtől péntekig, 9:00-18:00
-            <br> <b>Helyszín:</b> Személyes találkozóra előzetes egyeztetés alapján van lehetőség.
-        </div>
-        <div class="honlappart">
-            <p class="title2">Hogyan működik a folyamat?</p>
-            <br>
-            <p class="title3">Referenciák</p>
-            Munkáim során számos különböző weboldalt készítettem, amelyekre büszke vagyok. Itt találhatod néhány
-            korábbi projektemet.</p>
-            <br>
-            <p class="title3">Kapcsolatfelvétel</p>
-            Írj nekem e-mailt vagy hívj fel telefonon, hogy megbeszéljük az elképzeléseidet! A kapcsolatfelvételhez
-            szükséges adatokat lent találod.</p>
-            <br>
-            <p class="title3">Konzultáció és árajánlat</p>
-            Egy személyes találkozó vagy online megbeszélés során részletesen átbeszéljük az igényeidet. Ez alapján
-            adok egy árajánlatot, amely tartalmazza a projekt összes költségét.</p>
-            <br>
-            <p class="title3">Weblapkészítés</p>
-            Nekilátok a munkának, és folyamatosan tájékoztatlak a haladásról, hogy pontosan olyan legyen a
-            végeredmény, amilyet elképzeltél.</p>
-            <br>
-            <p class="title3">Megállapodás</p>
-            Amint elfogadod az ajánlatot, kiállítom a számlát, és megbeszéljük a pontos ütemezést.</p>
-        </div>
-        <a href="http://users.atw.hu/pbi/" target="_blank">
-            <div class="card"><img class="pbilogo center" src="img/logo vízjel obs.png" alt="roka">
-                <div>
-                    <p class="center title cardtitle">Péceli Baptista Gyülekezet</p><i class="icon fas fa-cross "></i>
-                    <p id="protr" class="rokadesc desc">Ezt a weblapot a gyülekezetem számára készítettem. Végül sajnos
-                        sosem került ki élesben mivel a vezetők inkább a WordPress mellett döntöttek a
-                        felhasználóbarátsága miatt. A Weboldal teljes tartalma a Péceli Baptista Gyülekezet tulajdonát
-                        képezi!</p>
-                    <p class="center title"></p>
-                </div>
-            </div>
-        </a>
-
-
-
-
-        <div class="card" style="height: fit-content;">
-            <div class="shelbyphoto" style="scale: 0.5; left: -90px; position: fixed; top: -225px;">
-                <div class="fooldalframe" id="fooldal">
-                    <img class="me" src="img/me.jpg" alt="Marton Bálint">
-                    <div style="justify-content: center; text-align: center;">
-                        <p style="font-family: 'Shelby'; font-size: 64px; padding-top: 0px;margin-top: 5px;">
-                            Marton
-                            Bálint</p>
-                    </div>
-                </div>
-                <img src="img/b.png" alt=""
-                    style="transform: rotate(24deg); position: absolute; top: 300px; width: 180px; left: -50px; display: none;">
-            </div>
-
-            <div style="margin-top: 320px;">
-                <p class="center title cardtitle">Ez a weboldal</p><i class="icon fa-solid fa-file"></i>
-                <p id="protr" class="rokadesc desc">Ezt a weblapot, már lassan 5 éve csiszolgatom és fejlesztgetem,
-                    karbantartom és ellenőrzöm.</p>
-                <p class="center title"></p>
-            </div>
-        </div>
-        <a href="src/oldsite/index.html" target="_blank">
-            <div class="card"><img class="tuzroka center" src="src/oldsite/img/b.png" alt="roka"
-                    style="width: 120px; height: auto; margin-top: 20px;">
-                <div>
-                    <p class="center title cardtitle">Az első honlapom</p><i class="icon fa-solid fa-file"></i>
-                    <p id="protr2" class="rokadesc desc">Ez volt az első honlapom, amit 10. osztályos koromban raktam
-                        össze, rengeteg munkával. Mivel ezt a honlapomat már nem fejlesztem tovább, ezért
-                        előfordulhatnak hiányosságok.</p>
-                    <p class="center title">"A kezdetek"</p>
-                </div>
-            </div>
-        </a>
-
-
-    </section>
-    <!-- Header -->
-    <header class="topnav top" id="myTopnav">
-        <a style="display: none;" href="#top"><img class="logo" src="img/b.png"></a><a href="#top">
-            <p id="navcert" class="navbar-text title">Főoldal</p>
-        </a><a href="#certification">
-            <p id="navcert" class="navbar-text title">Tanulmányok</p>
-        </a>
-        <a href="#project">
-            <p id="navproject" class="navbar-text title">Projektek</p>
-        </a><a href="#honlap">
-            <p id="honlap" class="navbar-text title">Honlapkészítés</p>
-        </a>
-
-        <div style="display: flex; text-align: center; width: max-content;">
-            <div class="awesomeicon"><i onclick="alert('Az E-mail címem: martonbalint.fcb[at]gmail.com')"
-                    class="navicon fa-solid fa-envelope"></i></div>
-            <div class="awesomeicon"><i onclick="alert('A telefonszámom: 0620 621 5215')"
-                    class="navicon fa-solid fa-phone"></i></div>
-            <i onclick="language()" class="navicon fix fas fa-language" style="display: none;"></i>
-        </div>
-        <a href="javascript:void(0);" href="#top" class="icon bars" onclick="respnav()"><i class="fa fa-bars"></i></a>
+        <h1>Caffenheim</h1>
     </header>
-    <!-- Footer -->
-    <p class="pcopy desc" id="copyright">TRADEMARK™ 2025 MARTON BÁLINT. MINDEN JOG FENNTARTVA</p>
-    <script>
-        AOS.init({
-            duration: 700,
-            offset: 150
-        });
-    </script>
-    <div class="loader"><img src="img/b.png" alt="Logó" style="width: 160px; display: none;"></div>
+    
+    <section id="about" style="display: flex; max-width: 1500px; margin: 10px auto; background-color: rgba(0, 0, 0, .6);border-radius: 36px;">
+        <img style="margin: 20px auto; width: 640px; height: 640px; border-radius: 12px;" src="img/caffenheim.png" alt="Caffenheim">
+        <div class="container">
+            <div style="margin-left: 15px;">
+            <h2 style="text-align: left; margin-top: 25px;">Rólunk</h2>
+            <p style="text-align: left;">Üdvözlünk a Caffenheimben, ahol a kávé iránti szenvedély és a közösség szeretete találkozik! ☕️<br>
+<br>
+                A Caffenheim nem csupán egy kávézó – ez egy hely, ahol megpihenhetsz, feltöltődhetsz és élvezheted a frissen pörkölt kávé varázsát. Kávéinkat gondosan válogatott, minőségi szemekből készítjük, amelyeket helyben pörkölünk, hogy minden csésze tökéletes ízélményt nyújtson.<br>
+                <br>
+                Kávéink és Ételeink<br>
+                Szenvedélyünk a különleges kávék világában rejlik – kínálatunkban megtalálhatók a klasszikus eszpresszók, a krémes cappuccinók és az izgalmas, kézműves filterkávék egyaránt. Mindemellett friss péksütemények, szendvicsek és házi sütemények várnak rád, melyeket helyi alapanyagokból készítünk.<br>
+                <br>
+                Közösségi Élmény<br>
+                A Caffenheim otthont ad baráti találkozóknak, meghitt beszélgetéseknek és inspiráló munkanapoknak is. Stílusos, mégis otthonos környezetünkben mindig szívesen látunk – akár egy gyors reggeli kávéra, akár egy délutáni pihenésre térsz be hozzánk.<br>
+                <br>
+                Fenntarthatóság és Támogatás<br>
+                Hiszünk a fenntarthatóságban, ezért újrahasznosítható csomagolásokat és helyi beszállítókat részesítünk előnyben. Támogatjuk a közösségi kezdeményezéseket és a helyi művészeket, mert számunkra fontos, hogy a Caffenheim ne csak egy kávézó, hanem egy közösségi tér is legyen.<br>
+                <br>
+                Látogass el hozzánk, és engedd, hogy egy csésze tökéletes kávéval megajándékozzuk a napodat!
+                Várunk szeretettel,
+                A Caffenheim csapata</p>
+        </div></div>
+    </section>
+
+    <section id="menu" style="max-width: 1500px; background-color: rgba(0, 0, 0, .6);border-radius: 36px;margin-bottom: 20px;">
+        <div class="container">
+            <div class="container">
+                <h2>Friss kávé, barátságos hangulat</h2>
+                <p>Fedezd fel a legfinomabb kávékat a város szívében.</p>
+            </div>
+            <h2>Kínálatunk</h2>
+            <ul>
+                <li><strong>Espresso</strong> - Az igazi, erőteljes élmény.</li>
+                <li><strong>Cappuccino</strong> - Krémes tejhab és eszpresszó tökéletes harmóniája.</li>
+                <li><strong>Latte</strong> - Lágy és finom, egy igazán gazdag élmény.</li>
+                <li><strong>Teák</strong> - Frissítő zöld-, fekete- és gyümölcsteák széles választéka.</li>
+                <li><strong>Friss pékáru</strong> - Mindennap frissen sütött pékáru, hogy a kávé mellett egy kis harapnivalót is kínáljunk.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h2>Galéria</h2>
+            <div class="gallery-grid">
+                <img class="insta" src="img/baked sweets.png" alt="Kávézó képe 1">
+                <img class="insta" src="img/biscuits.png" alt="Kávézó képe 2">
+                <img class="insta" src="img/cappuccino.png" alt="Kávézó képe 3">
+                <img class="insta" src="img/cappuccino2.png" alt="Kávézó képe 4">
+                <img class="insta" src="img/cappuccino3.png" alt="Kávézó képe 5">
+                <img class="insta" src="img/cinamon rolls.png" alt="Kávézó képe 6">
+                <img class="insta" src="img/cupcakes.png" alt="Kávézó képe 7">
+                <img class="insta" src="img/espresso.png" alt="Kávézó képe 8">
+                <img class="insta" src="img/espresso2.png" alt="Kávézó képe 9">
+                <img class="insta" src="img/espresso3.png" alt="Kávézó képe 10">
+                <img class="insta" src="img/sweets.png" alt="Kávézó képe 11">
+                <img class="insta" src="img/teas.png" alt="Kávézó képe 12">
+                <img class="insta" src="img/teas2.png" alt="Kávézó képe 13">
+                <img class="insta" src="img/teas3.png" alt="Kávézó képe 14">
+                <img class="insta" src="img/teas4.png" alt="Kávézó képe 15">
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <div class="container textbox" style="width: 800px;">
+            
+            <h2>Blog</h2>
+                <h3><a href="#">A kávézás művészete</a></h3>
+                <p>Ismerd meg a különböző kávé fajtákat és tudd meg, miért érdemes a kávét minden nap élvezni.</p><br>
+                <p><h3>A kávézás művészete</h3>
+
+                    A kávézás több mint egy egyszerű reggeli rutin – valódi művészet, amely generációk óta formálódik és finomodik. Egy csésze kávé képes elindítani a napot, inspirációt adni egy fáradt délutánon, vagy megkoronázni egy baráti beszélgetést. De mi teszi igazán művészivé ezt a rituálét?
+                    <br><br>
+                    <h3>A tökéletes alapanyag: a kávébab</h3><br>
+                    A kávézás művészete az alapoknál kezdődik: a kávébabbal. A világon két fő típusú babot ismerünk: az arabica és a robusta. Az arabica bársonyos, enyhén savas ízvilágával hódít, míg a robusta erőteljesebb, karakteresebb ízt kölcsönöz a kávénak. A minőségi kávé titka a friss, gondosan válogatott babokban rejlik.
+                    <br><br>
+                    <h3>A pörkölés: ahol az ízek kibontakoznak</h3><br>
+                    A pörkölés során dől el, hogy milyen aromák kerülnek előtérbe. A világos pörkölés könnyed, gyümölcsös ízvilágot hoz létre, míg a sötét pörkölés testesebb, csokoládés jegyekkel ajándékoz meg minket. A pörkölőmesterek szakértelme és tapasztalata alapvető a tökéletes íz eléréséhez.
+                    <br><br>
+                    <h3>A főzési technika: a kreativitás terepe</h3><br>
+                    A kávé elkészítése igazi alkotói folyamat. Az eszpresszógép elegáns precizitása, a filterkávé letisztult egyszerűsége vagy a cold brew frissessége mind-mind külön világot képviselnek. A baristák ügyessége és a választott technika meghatározza a végeredményt.
+                    <br><br>
+                    <h3>A rituálé: amikor a kávé életérzés</h3><br>
+                    A kávézás nem csak az ízekről szól. Az élményhez hozzátartozik a csészék kiválasztása, a hab latte art formába öntése és az a pillanat, amikor az első korty érinti az ajkunkat. Egy forró eszpresszó egy olasz piazzán, egy habos cappuccino egy hangulatos kávézóban – mindezek a pillanatok hozzáadnak az élményhez.
+                    <br><br>
+                    <h3>Kávé és közösség: az összetartozás ereje</h3><br>
+                    A kávézás közösségi élmény is. A baráti beszélgetések, az üzleti találkozók és a meghitt otthoni pillanatok gyakran egy csésze kávé mellett zajlanak. A kávéházak élettel teli színterei egyedi varázst kölcsönöznek a mindennapoknak.
+                    <br><br>
+                    <h3>A művészeted: találd meg a saját stílusod</h3><br>
+                    A kávézás művészete személyes – mindenki megtalálhatja a saját rituáléját. Lehet, hogy a reggeli eszpresszó az, ami felébreszt, vagy egy délutáni latte, ami nyugalmat hoz. A lényeg, hogy élvezd a folyamatot, és hagyd, hogy a kávé inspiráljon!</p>
+        </div>
+    </section>
+
+    <section id="order">
+        <div class="container textbox" style="width: 800px;">
+            <h2>Online rendelés</h2>
+            <p>Mostantól a kényelmes online rendelés is elérhető! Ne hagyd ki!</p>
+            <a href="https://www.caffenheim.com/order" id="gift-cards">Rendelj most!</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container textbox">
+            <h2>Kapcsolat</h2>
+            <address>
+                <p>Telefonszám: <strong>06206215216</strong></p>
+                <p>Email: <strong><a href="mailto:caffenheim@gmail.com">caffenheim@gmail.com</a></strong></p>
+                <p>Cím: <strong>Budapest, Pöttyös utca 23.</strong></p>
+                <p>Nyitvatartás: <strong>H-P: 08:00-20:00, Sz: 12:00-16:00, V: Zárva</strong></p>
+            </address>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5389.900155946416!2d19.038090748527104!3d47.51036343160436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dd86cc2355cd%3A0x31d7fb0f6e45a3f8!2sSixLetter%20Coffee%20Co.%20-%20Specialty%20Coffee%20Bar%20%26%20Breakfast%2C%20Brunch!5e0!3m2!1shu!2shu!4v1741765572667!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Caffenheim Kávézó - Minden jog fenntartva</p>
+    </footer>
+
 </body>
-
 </html>
-
-
-<!--
-Logó
-Önéletrajz
-honlap
-Fotózás
-A legfelső sectionnak telefonon ne legyen paddingja
--->
